@@ -17,7 +17,7 @@ interface CustomProps {
     fieldType: FormFieldType,
     name: string,
     label?: string,
-    placeolder?: string,
+    placeholder?: string,
     iconSrc?: string,
     iconAlt?: string,
     disabled?: boolean,
@@ -28,7 +28,7 @@ interface CustomProps {
 
 }
 
-const RenderField = () => {
+const RenderField = ({ field, props}: { field: any; props: CustomProps }) => {
     return (
         <Input
             type="text"
@@ -38,7 +38,7 @@ const RenderField = () => {
 }
 
 const CustomFormField = (props: CustomProps) => {
-    const { control, fieldType, name, label } = props
+    const { control, fieldType, name, label } = props;
   return (
     <FormField
         control={control}
@@ -50,17 +50,9 @@ const CustomFormField = (props: CustomProps) => {
                 )}
 
                 <RenderField field={field} props={props} />
+                <FormMessage className="shad-error" />
             </FormItem>
-        //   <FormItem>
-        //     <FormLabel>Username</FormLabel>
-        //     <FormControl>
-        //       <Input placeholder="shadcn" {...field} />
-        //     </FormControl>
-        //     <FormDescription>
-        //       This is your public display name.
-        //     </FormDescription>
-        //     <FormMessage />
-        //   </FormItem>
+ 
         )}
       />
   )

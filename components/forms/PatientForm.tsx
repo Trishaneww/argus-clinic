@@ -46,13 +46,13 @@ const PatientForm = () => {
         <p className="text-dark-700">Schedule your first appointment</p>
       </section>
 
-      // ensurs no type errors
+      {/* ensurs no type errors */}
       <CustomFormField 
         fieldType={FormFieldType.INPUT}
         control={form.control}
         name="name"
         label="Full Name"
-        placeHolder="John Doe"
+        placeholder="John Doe"
         iconSrc="/assets/icons/user.svg"
         iconAlt="user"
       />
