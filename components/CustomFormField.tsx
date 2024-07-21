@@ -11,6 +11,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Control } from "react-hook-form"
 import { FormFieldType } from "./forms/PatientForm"
+import Image from "next/image"
 
 interface CustomProps {
     control: Control<any>,
@@ -29,12 +30,17 @@ interface CustomProps {
 }
 
 const RenderField = ({ field, props}: { field: any; props: CustomProps }) => {
-    return (
-        <Input
-            type="text"
-            placeholder="John Doe"
-        />
-    )
+    const { fieldType, iconSrc, iconAlt, placeholder } = props;
+   switch (props.fieldType) {
+        case FormFieldType.INPUT:
+            return (
+                <div className="flex rounded-md border border-dark-500 bg-dark-400">
+                    {props.iconSrc && (
+                        <Image
+                    )}
+                </div>
+            )
+   }
 }
 
 const CustomFormField = (props: CustomProps) => {
