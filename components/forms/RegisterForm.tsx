@@ -275,6 +275,25 @@ const RegisterForm = ({ user }: {user: User}) => {
             ))}
       </CustomFormField>
 
+      <CustomFormField 
+        fieldType={FormFieldType.INPUT}
+        control={form.control}
+        name="identificationNumber"
+        label="Identification number"
+        placeholder="128983634r"
+      />
+
+      <CustomFormField 
+            fieldType={FormFieldType.SKELETON}
+            control={form.control}
+            name="identifcationDocument"
+            label="Scanned copy of indetification document"
+            renderSkeleton={(field) => (
+                <FormControl>
+                  FileUpload
+                </FormControl>
+            )}
+        />
 
 
       <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
