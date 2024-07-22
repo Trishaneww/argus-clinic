@@ -199,11 +199,42 @@ const RegisterForm = ({ user }: {user: User}) => {
             ))}
           </CustomFormField>
 
-
+        
       <div className="flex flex-col gap-6 xl:flex-row">
-      
+        <CustomFormField 
+            fieldType={FormFieldType.INPUT}
+            control={form.control}
+            name="insuranceProvider"
+            label="Insurance Provider"
+            placeholder="BlueCross Blue"
+          />
+
+        <CustomFormField 
+            fieldType={FormFieldType.INPUT}
+            control={form.control}
+            name="InsurancePolicyNumber"
+            label="Insurance policy number"
+            placeholder="SXJD89918r"
+          />
       </div>
 
+      <div className="flex flex-col gap-6 xl:flex-row">
+        <CustomFormField 
+            fieldType={FormFieldType.TEXTAREA}
+            control={form.control}
+            name="allergies"
+            label="Allergies (if any)"
+            placeholder="Peanuts, Pollen"
+          />
+
+        <CustomFormField 
+            fieldType={FormFieldType.TEXTAREA}
+            control={form.control}
+            name="currentMedication"
+            label="Current Medication (if any)"
+            placeholder="Ibuprofen 00MG"
+          />
+      </div>
 
       
 
