@@ -6,7 +6,7 @@ import Link from "next/link";
 
 // import { PasskeyModal } from "@/components/PasskeyModal";
 
-const Register = async ({ params: { userId } }: searchParamProps) => {
+const Register = async ({ params: { userId } }: SearchParamProps) => {
     const user = await getUser(userId);
 
   return (

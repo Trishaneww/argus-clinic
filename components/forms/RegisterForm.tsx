@@ -60,7 +60,9 @@ const RegisterForm = ({ user }: {user: User}) => {
       </section>
 
       <section className="space-y-6">
-        <h2 className="sub-header">Personal Information</h2>
+        <div className="mb-9 space-y-1">
+            <h2 className="sub-header">Personal Information</h2>
+        </div>
       </section>
 
       {/* ensurs no type errors */}
@@ -68,11 +70,32 @@ const RegisterForm = ({ user }: {user: User}) => {
         fieldType={FormFieldType.INPUT}
         control={form.control}
         name="name"
-        label="Full Name"
         placeholder="John Doe"
         iconSrc="/assets/icons/user.svg"
         iconAlt="user"
       />
+
+      <div className="flex flex-col gap-6 xl:flex-row">
+        <CustomFormField 
+            fieldType={FormFieldType.INPUT}
+            control={form.control}
+            name="email"
+            label="email"
+            placeholder="Johndoe@gmail.com"
+            iconSrc="/assets/icons/email.svg"
+            iconAlt="email"
+        />
+
+        <CustomFormField 
+            fieldType={FormFieldType.PHONE_INPUT}
+            control={form.control}
+            name="phone"
+            label="phone"
+            placeholder="(905)-672-2328"
+        />
+      </div>
+      
+
 
 
       <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
