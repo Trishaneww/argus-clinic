@@ -20,6 +20,7 @@ import { E164Number } from "libphonenumber-js/core";
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import { Select, SelectContent, SelectTrigger, SelectValue } from "./ui/select"
+import { Textarea } from "./ui/textarea"
 
 interface CustomProps {
     control: Control<any>,
@@ -100,7 +101,7 @@ const RenderField = ({ field, props}: { field: any; props: CustomProps }) => {
             )
         case FormFieldType.SKELETON:
             return (renderSkeleton ? renderSkeleton(field) : null)
-            case FormFieldType.SELECT:
+        case FormFieldType.SELECT:
                 return (
                   <FormControl>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
@@ -115,6 +116,17 @@ const RenderField = ({ field, props}: { field: any; props: CustomProps }) => {
                     </Select>
                   </FormControl>
                 );
+        case FormFieldType.TEXTAREA:
+            return (
+                <FormControl>
+                    <Textarea
+                        placehlolder={placeholder}
+                        {...field}
+                        className="shad-textArea"
+                        disabled={props.disabled}
+                    />
+                </FormControl>
+            )
         default:
             break;
    }

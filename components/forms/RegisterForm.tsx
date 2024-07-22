@@ -236,6 +236,25 @@ const RegisterForm = ({ user }: {user: User}) => {
           />
       </div>
 
+
+      <div className="flex flex-col gap-6 xl:flex-row">
+        <CustomFormField 
+            fieldType={FormFieldType.TEXTAREA}
+            control={form.control}
+            name="familyMedicalHistory"
+            label="Family medical history"
+            placeholder="Father has diabetes"
+          />
+
+        <CustomFormField 
+            fieldType={FormFieldType.TEXTAREA}
+            control={form.control}
+            name="pastMedicalHistory"
+            label="Past medical history"
+            placeholder="Ibuprofen 00MG"
+          />
+      </div>
+
       
 
 
