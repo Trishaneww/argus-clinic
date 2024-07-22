@@ -12,7 +12,7 @@ import { useRouter } from "next/navigation"
 import { createUser } from "@/lib/actions/patient.actions"
 import { FormFieldType } from "./PatientForm"
 import { RadioGroup, RadioGroupItem } from "../ui/radio-group"
-import { Doctors, GenderOptions } from "@/constants"
+import { Doctors, GenderOptions, IdentificationTypes } from "@/constants"
 import { Label } from "../ui/label"
 import Image from "next/image"
 import { SelectItem } from "../ui/select"
@@ -197,7 +197,7 @@ const RegisterForm = ({ user }: {user: User}) => {
                 </div>
               </SelectItem>
             ))}
-          </CustomFormField>
+      </CustomFormField>
 
         
       <div className="flex flex-col gap-6 xl:flex-row">
@@ -255,7 +255,25 @@ const RegisterForm = ({ user }: {user: User}) => {
           />
       </div>
 
-      
+      <section className="space-y-6">
+        <div className="mb-9 space-y-1">
+            <h2 className="sub-header">Identification & Verification</h2>
+        </div>
+      </section>
+
+      <CustomFormField
+            fieldType={FormFieldType.SELECT}
+            control={form.control}
+            name="identificationType"
+            label="Identification type"
+            placeholder="Select an identification type"
+          >
+            {IdentificationTypes.map((type, i) => (
+              <SelectItem key={type} value={type}>
+                {type}
+              </SelectItem>
+            ))}
+      </CustomFormField>
 
 
 
