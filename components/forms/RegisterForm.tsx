@@ -133,23 +133,21 @@ const RegisterForm = ({ user }: {user: User}) => {
       </div>
 
       <div className="flex flex-col gap-6 xl:flex-row">
-      <CustomFormField 
+        <CustomFormField 
             fieldType={FormFieldType.INPUT}
             control={form.control}
             name="address"
             label="Address"
             placeholder="Spadina Avenue, Toronto"
-        />
+          />
 
-      <CustomFormField 
+        <CustomFormField 
             fieldType={FormFieldType.INPUT}
             control={form.control}
-            name="address"
-            label="Address"
-            placeholder="Johndoe@gmail.com"
-            iconSrc="/assets/icons/email.svg"
-            iconAlt="email"
-        />
+            name="occupation"
+            label="Occupation"
+            placeholder="Stoke Broker"
+          />
       </div>
 
       <section className="space-y-6">
@@ -163,7 +161,21 @@ const RegisterForm = ({ user }: {user: User}) => {
 
 
       <div className="flex flex-col gap-6 xl:flex-row">
-      
+        <CustomFormField 
+            fieldType={FormFieldType.INPUT}
+            control={form.control}
+            name="emergencyContactName"
+            label="Emergency contact name"
+            placeholder="Guardian's name"
+        />
+
+        <CustomFormField 
+            fieldType={FormFieldType.PHONE_INPUT}
+            control={form.control}
+            name="phone"
+            label="phone"
+            placeholder="(905)-672-2328"
+        />
       </div>
 
       <div className="flex flex-col gap-6 xl:flex-row">
