@@ -184,7 +184,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="address"
               label="Address"
-              placeholder="14 street, New york, NY - 5101"
+              placeholder="Spadina Avenue Toronto"
             />
 
             <CustomFormField
@@ -192,7 +192,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="occupation"
               label="Occupation"
-              placeholder=" Software Engineer"
+              placeholder="Stoke Broker"
             />
           </div>
 
