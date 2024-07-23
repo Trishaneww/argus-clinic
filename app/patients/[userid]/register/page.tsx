@@ -1,17 +1,14 @@
-import PatientForm from "@/components/forms/PatientForm";
+import Image from "next/image";
+import { redirect } from "next/navigation";
+
 import RegisterForm from "@/components/forms/RegisterForm";
 import { getUser } from "@/lib/actions/patient.actions";
-import Image from "next/image";
-import Link from "next/link";
-
-// import { PasskeyModal } from "@/components/PasskeyModal";
 
 const Register = async ({ params: { userId } }: SearchParamProps) => {
-    const user = await getUser(userId);
+  const user = await getUser(userId);
 
   return (
     <div className="flex h-screen max-h-screen">
-
       <section className="remove-scrollbar container">
         <div className="sub-container max-w-[860px] flex-1 flex-col py-10">
           <Image
@@ -22,13 +19,9 @@ const Register = async ({ params: { userId } }: SearchParamProps) => {
             className="mb-12 h-10 w-fit"
           />
 
-          <RegisterForm user={user}/>
+          <RegisterForm user={user} />
 
-        
-            <p className="copyright py-12">
-              © 2024 Argus Clinic
-            </p>
-
+          <p className="copyright py-12">© 2024 CarePluse</p>
         </div>
       </section>
 
