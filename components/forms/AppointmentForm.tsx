@@ -12,9 +12,17 @@ import { UserFormValidation } from "@/lib/validation"
 import { useRouter } from "next/navigation"
 import { createUser } from "@/lib/actions/patient.actions"
 import { FormFieldType } from "./PatientForm"
+import { Doctors } from "@/constants"
+import { SelectItem } from "@radix-ui/react-select"
+import Image from "next/image"
 
  
-const AppointmentForm = () => {
+const AppointmentForm = ({
+    userId, patientId, type
+}: { userId:string;
+    patientId: string;
+    type: "create" | "cancel";
+}) => {
   const router = useRouter()
   const [isLoading, setIsLoading] = useState(false);
   const form = useForm<z.infer<typeof UserFormValidation>>({
@@ -57,34 +65,49 @@ const AppointmentForm = () => {
         <p className="text-dark-700">Request a new appointment in 10 seconds</p>
       </section>
 
+      {type !== "cancel" && (
+        <>
+            {/* PRIMARY CARE PHYSICIAN */}
+          <CustomFormField
+            fieldType={FormFieldType.SELECT}
+            control={form.control}
+            name="primaryPhysician"
+            label="Doctor"
+            placeholder="Select a doctor"
+          >
+            {Doctors.map((doctor, i) => (
+              <SelectItem key={doctor.name + i} value={doctor.name}>
+                <div className="flex cursor-pointer items-center gap-2">
+                  <Image
+                    src={doctor.image}
+                    width={32}
+                    height={32}
+                    alt="doctor"
+                    className="rounded-full border border-dark-500"
+                  />
+                  <p>{doctor.name}</p>
+                </div>
+              </SelectItem>
+            ))}
+          </CustomFormField>
+
+          <CustomFormField
+            fieldType={FormFieldType.DATE_PICKER}
+            control={form.control}
+            name="schedule"
+            label="Expected appointed date"
+            showTimeSelect
+            dateFormat="MM/dd/yyyy - h:mm aa"
+            />
+
+            <div className="flex flex-col gap-6">
+                <CustomFormField
+                    
+            </div>
+        </>
+      )}
+
       {/* ensurs no type errors */}
-      <CustomFormField 
-        fieldType={FormFieldType.INPUT}
-        control={form.control}
-        name="name"
-        label="Full Name"
-        placeholder="John Doe"
-        iconSrc="/assets/icons/user.svg"
-        iconAlt="user"
-      />
-
-      <CustomFormField 
-        fieldType={FormFieldType.INPUT}
-        control={form.control}
-        name="email"
-        label="email"
-        placeholder="Johndoe@gmail.com"
-        iconSrc="/assets/icons/email.svg"
-        iconAlt="email"
-      />
-
-      <CustomFormField 
-        fieldType={FormFieldType.PHONE_INPUT}
-        control={form.control}
-        name="phone"
-        label="phone"
-        placeholder="(905)-672-2328"
-      />
 
       <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
     </form>
