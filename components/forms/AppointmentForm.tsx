@@ -8,7 +8,7 @@ import { Form } from "@/components/ui/form"
 import CustomFormField from "../CustomFormField"
 import SubmitButton from "../ui/SubmitButton"
 import { useState } from "react"
-import { UserFormValidation } from "@/lib/validation"
+import { AppointmentFormValidation } from "@/lib/validation"
 import { useRouter } from "next/navigation"
 import { createUser } from "@/lib/actions/patient.actions"
 import { FormFieldType } from "./PatientForm"
@@ -25,31 +25,47 @@ const AppointmentForm = ({
 }) => {
   const router = useRouter()
   const [isLoading, setIsLoading] = useState(false);
-  const form = useForm<z.infer<typeof UserFormValidation>>({
-    resolver: zodResolver(UserFormValidation),
+  const form = useForm<z.infer<typeof AppointmentFormValidation>>({
+    resolver: zodResolver(AppointmentFormValidation),
     defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
+      primaryPhysician: "",
+      schedule: new Date(),
+      reason: "",
+      note: "",
+      cancellationReason: "",
     },
   })
  
-  const onSubmit = async (values: z.infer<typeof UserFormValidation>) => {
+  const onSubmit = async (values: z.infer<typeof AppointmentFormValidation>) => {
     setIsLoading(true);
 
-    try {
-      const user = {
-        name: values.name,
-        email: values.email,
-        phone: values.phone,
-      };
+    let status;
+    switch (type) {
+        case 'schedule':
+            status = "scheduled"
+            break;
+        case 'cancel':
+            status = "cancelled"
+            break;
+        default:
+            status = 'pending'
+            break;
+    }
 
-      console.log(user)
-      const newUser = await createUser(user);
-      console.log(newUser)
-      if (newUser) {
-        router.push(`/patients/${newUser.$id}/register`);
+    try {
+      if (type === 'create' && patientId) {
+        const appointmentData = {
+            userId,
+            oatient: patientId,
+            primaryPhysician: values.primaryPhysician,
+            schedule: new Date(values.schedule),
+            reason: values.reasom,
+            note: values.note,
+            status: status as Status
+        }
       }
+
+      const appointment = await ceateAppointment(appointment)
     } catch (error) {
       console.log(error);
     }
@@ -116,7 +132,7 @@ const AppointmentForm = ({
             dateFormat="MM/dd/yyyy - h:mm aa"
             />
 
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 xl:flex-row">
                 <CustomFormField
                     fieldType={FormFieldType.TEXTAREA}
                     control={form.control}
