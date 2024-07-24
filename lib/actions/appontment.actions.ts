@@ -1,5 +1,5 @@
 "use server"
-import { ID } from 'node-appwrite';
+import { ID, Query } from 'node-appwrite';
 import { APPOINTMENT_COLLECTION_ID, DATABASE_ID, databases } from '../appwrite.config';
 import { parseStringify } from '../utils';
 
@@ -27,6 +27,21 @@ export const getAppointment = async (appointmentId: string) => {
         )
 
         return parseStringify(appointment);
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export const getRecentAppointmentList = async () => {
+    try {
+        const appointments = await databases.listDocuments(
+            DATABASE_ID!,
+            APPOINTMENT_COLLECTION_ID!,
+            [Query.orderDesc(`$createdAt`)]    
+        ) // descending order
+
+        
+
     } catch (error) {
         console.log(error)
     }
