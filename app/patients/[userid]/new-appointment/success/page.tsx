@@ -30,6 +30,16 @@ const Success = () => {
                 Your <span className="text-green-500">appointment request </span> has been succesfully submitted!
             </h2>
             <p>We'll be in touch shortly to confirm.</p>
+
+            <section className="request-details">
+                <p>Requested appointment details:</p>
+                <div className="flex items-center gap-3">
+                    {/* <Image 
+
+
+                    /> */}
+                </div>
+            </section>
         </div>
     </div>
   )
