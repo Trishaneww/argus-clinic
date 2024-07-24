@@ -1,5 +1,4 @@
 "use server";
-
 import { ID, Query } from "node-appwrite";
 import {
   BUCKET_ID,
@@ -12,8 +11,7 @@ import {
   users,
 } from "../appwrite.config";
 import { parseStringify } from "../utils";
-import { InputFile } from "node-appwrite/file"
-
+import { InputFile } from "node-appwrite/file";
 
 // CREATE APPWRITE USER
 export const createUser = async (user: CreateUserParams) => {
@@ -51,6 +49,22 @@ export const getUser = async (userId: string) => {
       "An error occurred while retrieving the user details:",
       error
     );
+  }
+};
+
+export const getPatient = async (userId: string) => {
+  try {
+    const patients = await databases.listDocuments(
+      DATABASE_ID!,
+      PATIENT_COLLECTION_ID!,
+      [Query.equal('userId', userId)] //queries database for usersId
+    );
+
+    //returns list of patients 
+    //takes the first index
+    return parseStringify(patients.documents[0])
+  } catch (error) {
+    console.log()
   }
 };
 

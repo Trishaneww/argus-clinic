@@ -23,7 +23,6 @@ export enum FormFieldType {
 }
 
  
- 
 const PatientForm = () => {
   const router = useRouter()
   const [isLoading, setIsLoading] = useState(false);
