@@ -102,7 +102,21 @@ const AppointmentForm = ({
 
             <div className="flex flex-col gap-6">
                 <CustomFormField
-                    
+                    fieldType={FormFieldType.TEXTAREA}
+                    control={form.control}
+                    name="reason"
+                    label="Reason for appointment"
+                    placeholder="Enter reason for appointmemt"
+                />
+
+                <CustomFormField
+                    fieldType={FormFieldType.TEXTAREA}
+                    control={form.control}
+                    name="notes"
+                    label="Notes"
+                    placeholder="Enter notes"
+                />
+
             </div>
         </>
       )}
