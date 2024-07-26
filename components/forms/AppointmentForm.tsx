@@ -9,14 +9,15 @@ import { z } from "zod";
 
 import { SelectItem } from "@/components/ui/select";
 import { Doctors } from "@/constants";
-import { createAppointment,} from "@/lib/actions/appontment.actions";
+import {
+  createAppointment,
+  updateAppointment,
+} from"@/lib/actions/appontment.actions";
 import { getAppointmentSchema } from "@/lib/validation";
 import { Appointment } from "@/types/appwrite.types";
-
 import "react-datepicker/dist/react-datepicker.css";
-
 import CustomFormField from "../CustomFormField";
-import { FormFieldType } from "./PatientForm"
+import { FormFieldType } from "./PatientForm";
 import SubmitButton from "../ui/SubmitButton";
 import { Form } from "../ui/form";
 
@@ -31,7 +32,7 @@ const AppointmentForm = ({
   patientId: string;
   type: "create" | "schedule" | "cancel";
   appointment?: Appointment;
-  setOpen?: (open: boolean) => void;
+  setOpen?: Dispatch<SetStateAction<boolean>>;
 }) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
@@ -51,7 +52,9 @@ const AppointmentForm = ({
     },
   });
 
-  const onSubmit = async (values: z.infer<typeof AppointmentFormValidation> ) => {
+  const onSubmit = async (
+    values: z.infer<typeof AppointmentFormValidation>
+  ) => {
     setIsLoading(true);
 
     let status;
@@ -64,7 +67,6 @@ const AppointmentForm = ({
         break;
       default:
         status = "pending";
-        break;
     }
 
     try {
@@ -80,8 +82,6 @@ const AppointmentForm = ({
         };
 
         const newAppointment = await createAppointment(appointment);
-
-        console.log(newAppointment)
 
         if (newAppointment) {
           form.reset();
@@ -125,7 +125,6 @@ const AppointmentForm = ({
       break;
     default:
       buttonLabel = "Submit Apppointment";
-      break;
   }
 
   return (
@@ -219,4 +218,4 @@ const AppointmentForm = ({
   );
 };
 
-export default AppointmentForm;
+export default AppointmentForm
