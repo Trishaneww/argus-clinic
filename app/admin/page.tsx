@@ -1,13 +1,23 @@
-import DataTable from '@/components/table/DataTable'
+import {DataTable} from '@/components/table/DataTable'
 import StatCard from '@/components/StatCard'
 import { getRecentAppointmentList } from '@/lib/actions/appontment.actions'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import columns from '@/components/table/columns'
+import {columns, Payment} from '@/components/table/columns'
 
+async function getData(): Promise<Payment[]> {
+    // Fetch data from your API here.
+   
+  }
+
+  
 const Admin = async () => {
+    const data = await getData();
     const appointments = await getRecentAppointmentList()
+
+
+
   return (
     <div className="mx-auto flex max-w-7xl flex-col space-y-14">
         <header className="admin-header">
