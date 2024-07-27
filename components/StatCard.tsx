@@ -8,7 +8,7 @@ type StatCardProps = {
   icon: string;
 };
 
-const StatCard = ({ count = 0, label, icon, type }: StatCardProps) => {
+export const StatCard = ({ count = 0, label, icon, type }: StatCardProps) => {
   return (
     <div
       className={clsx("stat-card", {
@@ -32,5 +32,3 @@ const StatCard = ({ count = 0, label, icon, type }: StatCardProps) => {
     </div>
   );
 };
-
-export default StatCard;

@@ -1,29 +1,34 @@
-"use client"
- 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
-import { Form, FormControl } from "@/components/ui/form"
-import CustomFormField from "../CustomFormField"
-import SubmitButton from "../ui/SubmitButton"
-import { useState } from "react"
-import { PatientFormValidation, UserFormValidation } from "@/lib/validation"
-import { useRouter } from "next/navigation"
-import { registerPatient } from "@/lib/actions/patient.actions"
-import { FormFieldType } from "./PatientForm"
-import { RadioGroup, RadioGroupItem } from "../ui/radio-group"
-import { Doctors, GenderOptions, IdentificationTypes, PatientFormDefaultValues } from "@/constants"
-import { Label } from "../ui/label"
-import Image from "next/image"
-import { SelectItem } from "../ui/select"
-import FileUploader from "../FileUploader"
+"use client";
 
+import { zodResolver } from "@hookform/resolvers/zod";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+
+import { Form, FormControl } from "@/components/ui/form";
+import { Label } from "@/components/ui/label";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { SelectItem } from "@/components/ui/select";
+import {
+  Doctors,
+  GenderOptions,
+  IdentificationTypes,
+  PatientFormDefaultValues,
+} from "@/constants";
+import { registerPatient } from "@/lib/actions/patient.actions";
+import { PatientFormValidation } from "@/lib/validation";
+
+import "react-datepicker/dist/react-datepicker.css";
+import "react-phone-number-input/style.css";
+import CustomFormField, { FormFieldType } from "../CustomFormField";
+import { FileUploader } from "../FileUploader";
+import SubmitButton from "../SubmitButton";
 
 const RegisterForm = ({ user }: { user: User }) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
-
-  console.log(user.$id)
 
   const form = useForm<z.infer<typeof PatientFormValidation>>({
     resolver: zodResolver(PatientFormValidation),
@@ -84,8 +89,6 @@ const RegisterForm = ({ user }: { user: User }) => {
 
       if (newPatient) {
         router.push(`/patients/${user.$id}/new-appointment`);
-      } else {
-        console.log("hi")
       }
     } catch (error) {
       console.log(error);
@@ -184,7 +187,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="address"
               label="Address"
-              placeholder="Spadina Avenue Toronto"
+              placeholder="14 street, New york, NY - 5101"
             />
 
             <CustomFormField
@@ -192,7 +195,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="occupation"
               label="Occupation"
-              placeholder="Stoke Broker"
+              placeholder=" Software Engineer"
             />
           </div>
 
@@ -252,7 +255,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="insuranceProvider"
               label="Insurance provider"
-              placeholder="RBC AVION VALUE"
+              placeholder="BlueCross BlueShield"
             />
 
             <CustomFormField
@@ -271,7 +274,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="allergies"
               label="Allergies (if any)"
-              placeholder="Peanuts, Pollen"
+              placeholder="Peanuts, Penicillin, Pollen"
             />
 
             <CustomFormField
@@ -290,7 +293,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="familyMedicalHistory"
               label=" Family medical history (if relevant)"
-              placeholder="my father had diabetes"
+              placeholder="Mother had brain cancer, Father has hypertension"
             />
 
             <CustomFormField
@@ -298,7 +301,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="pastMedicalHistory"
               label="Past medical history"
-              placeholder="Appendectomy in 2022, Asthma diagnosis in childhood"
+              placeholder="Appendectomy in 2015, Asthma diagnosis in childhood"
             />
           </div>
         </section>
@@ -327,7 +330,7 @@ const RegisterForm = ({ user }: { user: User }) => {
             control={form.control}
             name="identificationNumber"
             label="Identification Number"
-            placeholder="902831902"
+            placeholder="123456789"
           />
 
           <CustomFormField
