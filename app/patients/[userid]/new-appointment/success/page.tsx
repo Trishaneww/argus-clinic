@@ -16,7 +16,6 @@ const RequestSuccess = async ({
   const doctor = Doctors.find(
     (doctor) => doctor.name === appointment.primaryPhysician
   );
-
   return (
     <div className=" flex h-screen max-h-screen px-[5%]">
       <div className="success-img">
