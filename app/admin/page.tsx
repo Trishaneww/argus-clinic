@@ -1,13 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { useEffect, useState } from 'react'
 import { StatCard } from "@/components/StatCard";
 import { columns } from "@/components/table/columns";
+import { patientColumns } from "@/components/table/patientColumns";
 import { DataTable } from "@/components/table/DataTable";
 import { getRecentAppointmentList } from "@/lib/actions/appointment.actions";
+import { getPatientList } from "@/lib/actions/patient.actions";
+import { PatientTable } from "@/components/table/PatientTable";
 
 const AdminPage = async () => {
   const appointments = await getRecentAppointmentList();
+  const patients = await getPatientList()
+
+
 
   return (
     <div className="mx-auto flex max-w-7xl flex-col space-y-14">
@@ -54,6 +60,11 @@ const AdminPage = async () => {
         </section>
 
         <DataTable columns={columns} data={appointments.documents} />
+        <PatientTable columns={patientColumns} data={patients} />
+
+        {/* {patients.map((patient:any) => (
+          <p key={patient.name}>{patient.name}</p>
+        ))} */}
       </main>
     </div>
   );
