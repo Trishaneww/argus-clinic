@@ -12,16 +12,17 @@ import { Doctors } from "@/constants";
 import {
   createAppointment,
   updateAppointment,
-} from"@/lib/actions/appontment.actions";
+} from "@/lib/actions/appointment.actions";
 import { getAppointmentSchema } from "@/lib/validation";
 import { Appointment } from "@/types/appwrite.types";
+
 import "react-datepicker/dist/react-datepicker.css";
-import CustomFormField from "../CustomFormField";
-import { FormFieldType } from "./PatientForm";
-import SubmitButton from "../ui/SubmitButton";
+
+import CustomFormField, { FormFieldType } from "../CustomFormField";
+import SubmitButton from "../SubmitButton";
 import { Form } from "../ui/form";
 
-const AppointmentForm = ({
+export const AppointmentForm = ({
   userId,
   patientId,
   type = "create",
@@ -102,6 +103,7 @@ const AppointmentForm = ({
           type,
         };
 
+        // @ts-ignore
         const updatedAppointment = await updateAppointment(appointmentToUpdate);
 
         if (updatedAppointment) {
@@ -217,5 +219,3 @@ const AppointmentForm = ({
     </Form>
   );
 };
-
-export default AppointmentForm

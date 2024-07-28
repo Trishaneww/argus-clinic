@@ -11,7 +11,6 @@ export const UserFormValidation = z.object({
     .refine((phone) => /^\+\d{10,15}$/.test(phone), "Invalid phone number"),
 });
 
-
 export const PatientFormValidation = z.object({
   name: z
     .string()
@@ -95,9 +94,6 @@ export const ScheduleAppointmentSchema = z.object({
   note: z.string().optional(),
   cancellationReason: z.string().optional(),
 });
-
-
-
 
 export const CancelAppointmentSchema = z.object({
   primaryPhysician: z.string().min(2, "Select at least one doctor"),

@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/input-otp";
 import { decryptKey, encryptKey } from "@/lib/utils";
 
-const PasskeyModal = () => {
+export const PasskeyModal = () => {
   const router = useRouter();
   const path = usePathname();
   const [open, setOpen] = useState(false);
@@ -118,5 +118,3 @@ const PasskeyModal = () => {
     </AlertDialog>
   );
 };
-
-export default PasskeyModal
