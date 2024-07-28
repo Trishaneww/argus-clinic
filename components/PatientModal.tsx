@@ -15,11 +15,13 @@ import { Appointment } from "@/types/appwrite.types";
 import { AppointmentForm } from "./forms/AppointmentForm";
 
 import "react-datepicker/dist/react-datepicker.css";
+import PatientDetailsForm from "./forms/PatientDetailsForm";
 
 export const PatientModal = ({
-  name,
+  name, patientId
 }: {
-    name: string
+    name: string;
+    patientId: string;
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -30,7 +32,7 @@ export const PatientModal = ({
       </DialogTrigger>
       <DialogContent className="shad-dialog sm:max-w-md">
         <DialogHeader className="mb-4 space-y-3">
-          <DialogTitle className="capitalize">Patient</DialogTitle>
+          <DialogTitle className="capitalize">{name}</DialogTitle>
           <DialogDescription>
             patient details below
           </DialogDescription>
@@ -43,6 +45,10 @@ export const PatientModal = ({
           appointment={appointment}
           setOpen={setOpen}
         /> */}
+
+        <PatientDetailsForm
+            patientId={patientId} 
+        />
       </DialogContent>
     </Dialog>
   );

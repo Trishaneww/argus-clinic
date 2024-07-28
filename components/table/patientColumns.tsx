@@ -90,6 +90,7 @@ export const patientColumns: ColumnDef<Patient>[] = [
         <div className="flex gap-1">
           <PatientModal
             name={patient.name}
+            patientId={patient.$id}
             // patientId={appointment.patient.$id}
             // userId={appointment.userId}
             // appointment={appointment}
