@@ -125,6 +125,17 @@ const PatientDetailsForm = ({ patient } : { patient: any}) => {
 
           <div className="flex flex-col gap-6 xl:flex-row mb-6 flex-wrap">
             <div>
+              <label className="text-slate-400 text-sm">Allergies</label>
+              <div className="flex rounded-md border border-slate-200 bg-slate-50 mt-2  w-[220px]">
+                <Textarea
+                  placeholder={patient.allergies}
+                  className="shad-textArea"
+                  disabled
+                />
+              </div>
+            </div>
+
+            <div>
               <label className="text-slate-400 text-sm">Current Medication</label>
               <div className="flex rounded-md border border-slate-200 bg-slate-50 mt-2  w-[220px]">
                 <Textarea
@@ -136,11 +147,22 @@ const PatientDetailsForm = ({ patient } : { patient: any}) => {
             </div>
 
             <div>
-              <label className="text-slate-400 text-sm">Emergency Number</label>
+              <label className="text-slate-400 text-sm">Family Medical History</label>
               <div className="flex rounded-md border border-slate-200 bg-slate-50 mt-2  w-[220px]">
-                <Input
-                  placeholder={patient.emergencyContactNumber}
-                  className="shad-input border-0"
+                <Textarea
+                  placeholder={patient.familyMedicalHistory}
+                  className="shad-textArea"
+                  disabled
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="text-slate-400 text-sm">Past Medical History</label>
+              <div className="flex rounded-md border border-slate-200 bg-slate-50 mt-2  w-[220px]">
+                <Textarea
+                  placeholder={patient.pastMedicalHistory}
+                  className="shad-textArea"
                   disabled
                 />
               </div>
