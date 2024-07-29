@@ -1,0 +1,20 @@
+@use "./partials/mixins" as *;
+@use "./partials/variables" as *;
+@use "./partials/colors" as *;
+@use "./partials/paddings" as *;
+
+
+.hero {
+    background-color: white;
+    // background-image: url('../public/assets/images/background4.png');
+    height: 100vh;
+    // background-image: url('./images/wallpaper.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.198);
+}
+
