@@ -111,6 +111,20 @@ export const getPatient = async (userId: string) => {
   }
 };
 
+export const getPatientList = async () => {
+  try {
+    const patients = await databases.listDocuments(
+      DATABASE_ID!,
+      PATIENT_COLLECTION_ID!
+    )
+
+    return parseStringify(patients.documents)
+  } catch (error) {
+    console.log(`an error has occured while retreiving the patient list: ${error}`)
+  }
+}
+
+
 // export const getPatient = async (userId: string) => {
 //   try {
 //     const patients = await databases.listDocuments(
