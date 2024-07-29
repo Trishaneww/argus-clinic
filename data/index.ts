@@ -10,18 +10,36 @@ export const doctors = [
       id: 1,
       name: "Dr. Sanchez",
       desc: "PrimeTort Leads, the marketing arm of YA Solutions Inc, specializes in Mass Tort Case Acquisition.",
-      img: "/doctor1.png",
+      img: '/assets/images/doctor1.png',
     },
     {
       id: 2,
       name: "Dr. Neale",
       desc: "PrimeTort Leads, the marketing arm of YA Solutions Inc, specializes in Mass Tort Case Acquisition.",
-      img: "/doctor2.png",
+      img: '/assets/images/doctor2.png',
     },
     {
       id: 3,
       name: "Dr. Sanadi",
       desc: "PrimeTort Leads, the marketing arm of YA Solutions Inc, specializes in Mass Tort Case Acquisition.",
-      img: "/doctor3.png",
+      img: '/assets/images/doctor3.png',
     },
   ];
+
+export const accordion = [
+    {
+        id: 1,
+        item: 'Is it accessible?',
+        content: 'Yes. It adheres to the WAI-ARIA design pattern. PrimeTort Leads, the marketing arm of YA Solutions Inc, specializes in Mass Tort Case Acquisition.'
+    },
+    {
+        id: 2,
+        item: 'Is it styled?',
+        content: 'PrimeTort Leads, the marketing arm of YA Solutions Inc, specializes in Mass Tort Case Acquisition.'
+    },
+    {
+        id: 3,
+        item: 'How can I book an appointment',
+        content: 'Yes. It adheres to the WAI-ARIA design pattern. PrimeTort Leads, the marketing arm of YA Solutions Inc, specializes in Mass Tort Case Acquisition.'
+    }
+]

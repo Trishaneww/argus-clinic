@@ -6,13 +6,33 @@
 
 .hero {
     background-color: white;
-    // background-image: url('../public/assets/images/background4.png');
+    // background-image: url('../public/assets/images/background5.png');
     height: 100vh;
     // background-image: url('./images/wallpaper.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+// .hero {
+//     height: 50vh;
+// }
+
+// .hero::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     opacity: 1;
+//     background-image: url('../public/assets/images/background5.png');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+//     background-position: center;
+// }
+
 
 .navbar {
     background-color: rgba(255, 255, 255, 0.198);
