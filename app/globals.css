@@ -83,7 +83,7 @@
 
   /* ===== ADMIN */
   .admin-header {
-    @apply sticky top-3 z-20 mx-3 flex items-center justify-between rounded-2xl bg-dark-200 px-[5%] py-5 shadow-lg xl:px-12;
+    @apply sticky top-3 z-20 mx-3 flex items-center justify-between rounded-2xl bg-slate-50 px-[5%] py-5 shadow-lg xl:px-12;
   }
 
   .admin-main {
@@ -109,7 +109,7 @@
   }
 
   .file-upload_label {
-    @apply flex flex-col justify-center gap-2 text-center text-dark-600;
+    @apply flex flex-col justify-center gap-2 text-center text-slate-600;
   }
 
   /* ==== Stat Card */
@@ -191,23 +191,23 @@
   }
 
   .shad-gray-btn {
-    @apply border border-dark-500 cursor-pointer bg-dark-400 text-white !important;
+    @apply border border-slate-300 cursor-pointer bg-slate-50 text-white !important;
   }
 
   .shad-input-label {
-    @apply text-14-medium text-dark-700 !important;
+    @apply text-14-medium text-slate-500 !important;
   }
 
   .shad-input {
-    @apply bg-slate-50 placeholder:text-dark-600 border-gray-800 h-11 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
+    @apply bg-slate-50 placeholder:text-slate-500 border-gray-800 h-11 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
   }
 
   .shad-input-icon {
-    @apply bg-dark-400 placeholder:text-dark-600 border-dark-500 h-11 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
+    @apply bg-dark-400 placeholder:text-slate-600 border-dark-500 h-11 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
   }
 
   .shad-textArea {
-    @apply bg-slate-50 placeholder:text-dark-600 border-slate-200 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
+    @apply bg-slate-50 placeholder:text-slate-600 border-slate-300 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
   }
 
   .shad-combobox-item {
@@ -227,7 +227,7 @@
   }
 
   .shad-dialog {
-    @apply bg-dark-400 border-dark-500 !important;
+    @apply bg-slate-50 border-dark-500 !important;
   }
 
   .shad-dialog button {

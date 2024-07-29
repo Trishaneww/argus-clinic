@@ -13,6 +13,7 @@ import { UserFormValidation } from "@/lib/validation";
 import "react-phone-number-input/style.css";
 import CustomFormField, { FormFieldType } from "../CustomFormField";
 import SubmitButton from "../SubmitButton";
+import Image from "next/image";
 
 export const PatientForm = () => {
   const router = useRouter();
@@ -53,7 +54,14 @@ export const PatientForm = () => {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-6">
         <section className="mb-12 space-y-4">
-          <h1 className="header">Hi there 👋</h1>
+          <h1 className="header">ARGUS CLINIC</h1>
+          {/* <Image
+            src="/assets/images/logo.png"
+            height={1000}
+            width={1000}
+            alt="patient"
+            className="mb-2 h-10 w-fit"
+          /> */}
           <p className="text-dark-700">Get started with appointments.</p>
         </section>
 
