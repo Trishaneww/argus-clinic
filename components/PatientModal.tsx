@@ -26,12 +26,12 @@ export const PatientModal = ({ patient }: { patient: any }) => {
       <DialogTrigger asChild>
         <Button variant="ghost" className={`capitalize text-green-500`}>View More</Button>
       </DialogTrigger>
-      <DialogContent className="shad-dialog sm:max-w-md">
-        <DialogHeader className="mb-4 space-y-3">
-          <DialogTitle className="capitalize">{patient.name}</DialogTitle>
-          <DialogDescription>
+      <DialogContent className="shad-dialog sm:max-w-md lg:max-w-[35rem] max-h-[30rem] overflow-y-scroll">
+        <DialogHeader className="mb-1 space-y-3">
+          <DialogTitle className="capitalize text-2xl">Patient Details</DialogTitle>
+          {/* <DialogDescription>
             patient details below
-          </DialogDescription>
+          </DialogDescription> */}
         </DialogHeader>
 
         <PatientDetailsForm

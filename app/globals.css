@@ -199,7 +199,7 @@
   }
 
   .shad-input {
-    @apply bg-slate-50 placeholder:text-slate-500 border-gray-800 h-11 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
+    @apply bg-slate-50 placeholder:text-slate-600 border-gray-800 h-11 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
   }
 
   .shad-input-icon {
