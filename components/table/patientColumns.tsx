@@ -37,12 +37,12 @@ export const patientColumns: ColumnDef<Patient>[] = [
     },
   },
   {
-    accessorKey: "gender",
-    header: "Gender",
+    accessorKey: "phone",
+    header: "Phone",
     cell: ({ row }) => {
-      const appointment = row.original;
+      const patient = row.original;
       return (
-        <p className="text-14-regular min-w-[100px]">{appointment.gender}</p>
+        <p className="text-14-regular min-w-[100px]">{patient.phone}</p>
       );
     },
   },
@@ -50,9 +50,9 @@ export const patientColumns: ColumnDef<Patient>[] = [
     accessorKey: "address",
     header: "Address",
     cell: ({ row }) => {
-      const appointment = row.original;
+      const patient = row.original;
       return (
-        <p className="text-14-regular min-w-[100px]">{appointment.address}</p>
+        <p className="text-14-regular min-w-[100px]">{patient.address}</p>
       );
     },
   },

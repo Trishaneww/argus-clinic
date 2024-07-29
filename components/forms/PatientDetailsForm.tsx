@@ -8,12 +8,13 @@ import RegisterForm from './RegisterForm';
 import { Input } from '../ui/input';
 import PhoneInput from "react-phone-number-input";
 import { Textarea } from '../ui/textarea';
+import { Button } from '../ui/button';
+import SubmitButton from '../SubmitButton';
 
 const PatientDetailsForm = ({ patient } : { patient: any}) => {
     console.log(patient)
   return (
     <div>
-
         <section className="space-y-6">
           <div className="mb-1 space-y-1">
             <h2 className="text-md">Personal Information</h2>
@@ -169,6 +170,8 @@ const PatientDetailsForm = ({ patient } : { patient: any}) => {
             </div>
           </div>
         </section>
+
+        <SubmitButton isLoading={false}  className={`shad-secondary-btn w-[30%] mt-14 relative`}>Update</SubmitButton>
     </div>
   )
 }
