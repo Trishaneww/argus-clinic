@@ -26,19 +26,31 @@ const PatientDetailsForm = ({ patient } : { patient: any}) => {
         />
 
         <div className="flex flex-col gap-6 xl:flex-row">
-          <div className="flex rounded-md border border-slate-200 bg-slate-50">
-            <Input
-              placeholder={patient.email}
-              className="shad-input border-0"
-            />
+          <div>
+            <label className="text-slate-400 text-sm">Email Address</label>
+            <div className="flex rounded-md border border-slate-200 bg-slate-50 mt-2">
+              <Input
+                placeholder={patient.email}
+                className="shad-input border-0"
+                disabled
+              />
+            </div>
           </div>
-          <div className="flex rounded-md border border-slate-200 bg-slate-50">
-            <Input
-              placeholder={patient.email}
-              className="shad-input border-0"
-            />
+
+          <div>
+            <label className="text-slate-400 text-sm">Phone Number</label>
+            <div className="flex rounded-md border border-slate-200 bg-slate-50 mt-2">
+              <Input
+                placeholder={patient.phone}
+                className="shad-input border-0"
+                disabled
+              />
+            </div>
           </div>
         </div>
+
+
+
     </div>
   )
 }
