@@ -10,19 +10,15 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Appointment } from "@/types/appwrite.types";
 
 import { AppointmentForm } from "./forms/AppointmentForm";
 
 import "react-datepicker/dist/react-datepicker.css";
 import PatientDetailsForm from "./forms/PatientDetailsForm";
 
-export const PatientModal = ({
-  name, patientId
-}: {
-    name: string;
-    patientId: string;
-}) => {
+import { Patient } from "@/types/appwrite.types";
+
+export const PatientModal = ({ patient }: { patient: any }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -32,22 +28,14 @@ export const PatientModal = ({
       </DialogTrigger>
       <DialogContent className="shad-dialog sm:max-w-md">
         <DialogHeader className="mb-4 space-y-3">
-          <DialogTitle className="capitalize">{name}</DialogTitle>
+          <DialogTitle className="capitalize">{patient.name}</DialogTitle>
           <DialogDescription>
             patient details below
           </DialogDescription>
         </DialogHeader>
 
-        {/* <AppointmentForm
-          userId={userId}
-          patientId={patientId}
-          type={type}
-          appointment={appointment}
-          setOpen={setOpen}
-        /> */}
-
         <PatientDetailsForm
-            patientId={patientId} 
+            patient={patient}
         />
       </DialogContent>
     </Dialog>

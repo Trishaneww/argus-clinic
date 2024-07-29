@@ -81,22 +81,15 @@ export const patientColumns: ColumnDef<Patient>[] = [
 //     },
 //   },
   {
-    id: "actions",
-    header: () => <div className="pl-4">Actions</div>,
+    id: "Details",
+    header: () => <div className="pl-4">Details</div>,
     cell: ({ row }) => {
       const patient = row.original;
 
       return (
         <div className="flex gap-1">
           <PatientModal
-            name={patient.name}
-            patientId={patient.$id}
-            // patientId={appointment.patient.$id}
-            // userId={appointment.userId}
-            // appointment={appointment}
-            // type="schedule"
-            // title="Schedule Appointment"
-            // description="Please confirm the following details to schedule."
+            patient={patient}
           />
         </div>
       );
