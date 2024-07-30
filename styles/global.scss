@@ -5,8 +5,9 @@
 
 
 .hero {
-    background-color: white;
-    // background-image: url('../public/assets/images/background5.png');
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
     height: 100vh;
     // background-image: url('./images/wallpaper.png');
     background-size: cover;
@@ -18,20 +19,20 @@
 //     height: 50vh;
 // }
 
-// .hero::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     right: 0;
-//     opacity: 1;
-//     background-image: url('../public/assets/images/background5.png');
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-attachment: fixed;
-//     background-position: center;
-// }
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    background-image: url('../public/assets/images/background9.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 
 
 .navbar {
