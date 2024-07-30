@@ -26,9 +26,9 @@ const Faq = () => {
                 alt="doctors"
             />
 
-            <Accordion type="single" collapsible className="w-[600px]">
+            <Accordion type="single" collapsible className="flex flex-col gap-4 w-[600px] bg-red-300">
                 {accordion.map((accordion:any, idx:number) => (
-                    <AccordionItem value={`item-${idx}`}>
+                    <AccordionItem value={`item-${idx}`} className="bg-white border-none p-4">
                     <AccordionTrigger>{accordion.item}</AccordionTrigger>
                         <AccordionContent>
                             {accordion.content}

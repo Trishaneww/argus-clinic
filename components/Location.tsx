@@ -23,21 +23,22 @@ const Location = () => {
           <CardTitle>Details</CardTitle>
           <CardDescription></CardDescription>
         </CardHeader>
-        <CardContent>
-            <div className="flex justify-center items-center gap-4">
+        <CardContent className="flex flex-col gap-2">
+            <div className="flex justify-start items-center gap-4 w-full">
                 <IoLocationOutline size={64}/>
                 <p className="text-sm">Oak Lake Medical Centre, Suite A2, 146 Lakeshore Rd W, Oakville, ON</p>
             </div>
 
-            <div className="flex justify-center items-center gap-4">
-                <IoLocationOutline size={64}/>
+            <div className="flex justify-start items-center gap-4 w-full">
+                <MdOutlineMail size={64}/>
                 <p className="text-sm">Oak Lake Medical Centre, Suite A2, 146 Lakeshore Rd W, Oakville, ON</p>
             </div>
 
-            <div className="flex justify-center items-center gap-4">
-                <IoLocationOutline size={64}/>
-                <p className="text-sm">Oak Lake Medical Centre, Suite A2, 146 Lakeshore Rd W, Oakville, ON</p>
+            <div className="flex justify-start items-center gap-4 w-full">
+                <MdPhone size={36}/>
+                <p className="text-sm">905-842-2410</p>
             </div>
+
         </CardContent>
       </Card>
 

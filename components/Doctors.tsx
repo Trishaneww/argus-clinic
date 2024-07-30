@@ -29,11 +29,11 @@ const Doctors = () => {
     <div className="flex flex-col gap-2 items-center justify-center">
 
       <section className="flex flex-col gap-6 items-center mb-10 text-center">
-        <h1 className="text-slate-800 text-4xl font-semibold">Our Psychiatrists</h1>
+        <h1 className="text-slate-800 text-4xl font-semibold">Our Doctors</h1>
         <p className="text-slate-500 w-2/3">As users complete quizzes, their scores are calculated and displayed immediately, providing instant feedback on their performance.</p>
       </section>
       
-      <div className="flex gap-10 justify-center">
+      <div className="flex flex-wrap gap-10 justify-center">
       {doctors.map((doctor: any, idx: number) => (
         <Card className="w-[350px]">
         <CardHeader>

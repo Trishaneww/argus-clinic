@@ -12,13 +12,15 @@ import Doctors from "@/components/Doctors";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Location from "@/components/Location";
+import Services from "@/components/Services";
 
 const Home = ({ searchParams }: SearchParamProps) => {
   // const isAdmin = searchParams?.admin === "true";
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-slate-50">
       <Hero />
+      <Services />
       <Doctors />
       <Faq />
       <Location />

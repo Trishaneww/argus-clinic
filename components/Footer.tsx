@@ -5,11 +5,11 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className="flex justify-between  items-center w-full h-[24rem] bg-slate-900 rounded-t-[2rem]">
-        <section className="w-2/4">
+        <section className="w-1/4">
             {/* <h1 className="text-slate-50">Contact Us</h1> */}
         </section>
 
-        <section className="flex gap-12 justify-center items-start w-2/4">
+        <section className="flex gap-12 justify-center items-start w-3/4">
             <div className="flex flex-col gap-2">
                 <p className="text-slate-50 font-semibold">Company</p>
                 {footerCompany.map((link) => (
