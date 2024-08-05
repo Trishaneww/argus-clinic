@@ -1,46 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import { PatientForm } from "@/components/forms/PatientForm";
 import { PasskeyModal } from "@/components/PasskeyModal";
+import { FloatingNav } from "@/components/ui/FloatingNav";
+import { navItems } from "@/data";
+import '../styles/global.scss';
+import Navbar from "@/components/Navbar";
+import { Button } from "@/components/ui/button";
+import Hero from "@/components/Hero";
+import Doctors from "@/components/Doctors";
+import Faq from "@/components/Faq";
+import Footer from "@/components/Footer";
+import Location from "@/components/Location";
+import Services from "@/components/Services";
 
 const Home = ({ searchParams }: SearchParamProps) => {
-  const isAdmin = searchParams?.admin === "true";
+  // const isAdmin = searchParams?.admin === "true";
 
   return (
-    <div className="flex h-screen max-h-screen">
-      {isAdmin && <PasskeyModal />}
+    <div className="flex flex-col bg-slate-50">
+      <Hero />
+      <Services />
+      <Doctors />
+      <Faq />
+      <Location />
+      <Footer />
 
-      <section className="remove-scrollbar container my-auto">
-        <div className="sub-container max-w-[496px]">
-          {/* <Image
-            src="/assets/images/logo.png"
-            height={1000}
-            width={1000}
-            alt="patient"
-            className="mb-12 h-10 w-fit"
-          /> */}
+      {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5792.316625405153!2d-79.68726802323347!3d43.457291965078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b5ce7e5fbf4ef%3A0xa5f35a5f8774c679!2sArgus%20Medical%20Centre!5e0!3m2!1sen!2sca!4v1722286047432!5m2!1sen!2sca" width="800" height="600" style="border:0;"  loading="lazy"></iframe> */}
 
-          <PatientForm />
-
-          <div className="text-14-regular mt-20 flex justify-between">
-            <p className="justify-items-end text-dark-600 xl:text-left">
-              © 2024 CarePluse
-            </p>
-            <Link href="/?admin=true" className="text-green-500">
-              Admin
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <Image
-        src="/assets/images/register-img.png"
-        height={1000}
-        width={1000}
-        alt="patient"
-        className="side-img max-w-[50%]"
-      />
+      {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5792.316625405153!2d-79.68726802323347!3d43.457291965078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b5ce7e5fbf4ef%3A0xa5f35a5f8774c679!2sArgus%20Medical%20Centre!5e0!3m2!1sen!2sca!4v1722286047432!5m2!1sen!2sca" width="800" height="600" loading="lazy"></iframe> */}
     </div>
   );
 };

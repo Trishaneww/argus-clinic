@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { MdClose } from "react-icons/md";
 
 import {
   AlertDialog,
@@ -71,13 +72,17 @@ export const PasskeyModal = () => {
         <AlertDialogHeader>
           <AlertDialogTitle className="flex items-start justify-between">
             Admin Access Verification
-            <Image
+            {/* <Image
               src="/assets/icons/close.svg"
               alt="close"
               width={20}
               height={20}
               onClick={() => closeModal()}
-              className="cursor-pointer"
+              className="cursor-pointer text-slate-800"
+            /> */}
+            <MdClose 
+              onClick={() => closeModal()}
+              className="cursor-pointer text-slate-800"
             />
           </AlertDialogTitle>
           <AlertDialogDescription>
