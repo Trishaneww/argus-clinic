@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="flex justify-between  items-center w-full h-[24rem] bg-slate-900 rounded-t-[2rem]">
+    <div className="flex justify-between  items-center w-full h-[24rem] bg-slate-900 rounded-t-[2rem] mt-20">
         <section className="w-1/4">
             {/* <h1 className="text-slate-50">Contact Us</h1> */}
         </section>

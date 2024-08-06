@@ -26,7 +26,7 @@ import Image from 'next/image'
 
 const Doctors = () => {
   return (
-    <div className="flex flex-col gap-2 items-center justify-center">
+    <div className="flex flex-col gap-2 items-center justify-center mt-20">
 
       <section className="flex flex-col gap-6 items-center mb-10 text-center">
         <h1 className="text-slate-800 text-4xl font-semibold">Our Doctors</h1>

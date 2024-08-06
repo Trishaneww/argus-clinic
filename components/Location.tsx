@@ -10,6 +10,7 @@ import {
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
 import { MdPhone } from "react-icons/md";
+import { IoMdPrint } from "react-icons/io";
 import Image from 'next/image'
 
 const Location = () => {
@@ -23,22 +24,26 @@ const Location = () => {
           <CardTitle>Details</CardTitle>
           <CardDescription></CardDescription>
         </CardHeader>
-        <CardContent className="flex flex-col gap-2">
+        <CardContent className="flex flex-col gap-4">
             <div className="flex justify-start items-center gap-4 w-full">
                 <IoLocationOutline size={64}/>
                 <p className="text-sm">Oak Lake Medical Centre, Suite A2, 146 Lakeshore Rd W, Oakville, ON</p>
             </div>
 
             <div className="flex justify-start items-center gap-4 w-full">
-                <MdOutlineMail size={64}/>
-                <p className="text-sm">Oak Lake Medical Centre, Suite A2, 146 Lakeshore Rd W, Oakville, ON</p>
+                <IoMdPrint size={36}/>
+                <p className="text-sm">905-842-7376</p>
             </div>
 
             <div className="flex justify-start items-center gap-4 w-full">
-                <MdPhone size={36}/>
-                <p className="text-sm">905-842-2410</p>
+                <MdOutlineMail size={34}/>
+                <p className="text-sm">argusclinic@gmail.com</p>
             </div>
 
+            <div className="flex justify-start items-center gap-4 w-full">
+                <MdPhone size={32}/>
+                <p className="text-sm">905-842-2410</p>
+            </div>
         </CardContent>
       </Card>
 
