@@ -1,7 +1,7 @@
 export const navItems = [
     { name: "Our Services", link: "/services" },
-    { name: "Blog", link: "/blog" },
-    { name: "Contact", link: "mailto:trishaneww@gmail.com" },
+    { name: "Nurse Hours", link: "/nursehours" },
+    { name: "Contact", link: "/contact" },
     { name: "Nurse Hours", link: "/" },
     { name: "After Hours Care", link: "/afterhours" },
 ];
