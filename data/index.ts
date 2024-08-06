@@ -3,7 +3,7 @@ export const navItems = [
     { name: "Blog", link: "/blog" },
     { name: "Contact", link: "mailto:trishaneww@gmail.com" },
     { name: "Nurse Hours", link: "/" },
-    { name: "After Hours Care", link: "/" },
+    { name: "After Hours Care", link: "/afterhours" },
 ];
 
 export const doctors = [
