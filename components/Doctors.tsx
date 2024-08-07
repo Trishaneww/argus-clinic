@@ -26,10 +26,10 @@ import Image from 'next/image'
 
 const Doctors = () => {
   return (
-    <div className="flex flex-col gap-2 items-center justify-center">
+    <div className="flex flex-col gap-2 items-center justify-center mt-20">
 
       <section className="flex flex-col gap-6 items-center mb-10 text-center">
-        <h1 className="text-slate-800 text-4xl font-semibold">Our Doctors</h1>
+        <h1 className="text-slate-800 text-5xl font-semibold">Our Doctors</h1>
         <p className="text-slate-500 w-2/3">As users complete quizzes, their scores are calculated and displayed immediately, providing instant feedback on their performance.</p>
       </section>
       
