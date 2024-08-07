@@ -9,15 +9,15 @@ import '../styles/global.scss';
 
 const Navbar = () => {
   return (
-    <div className="flex w-[94%] bg-transparent justify-between items-center h-[80px] rounded-3xl p-4 mt-10 backdrop-blur-md navbar self-center">
-        <Image
-          src='/assets/images/logo.png'
-          alt='logo'
-          width={54}
-          height={54}
-        />
-
+    <div className="flex w-[74%] bg-transparent justify-between items-center h-[80px] rounded-3xl p-4 mt-10 backdrop-blur-md navbar self-center scroll-smooth">
         <div className="flex gap-6">
+          <Image
+            src='/assets/images/logo.png'
+            alt='logo'
+            width={54}
+            height={54}
+          />
+
           {navItems.map((navItem: any, idx: number) => (
             <Link 
               key={idx} 
@@ -32,7 +32,6 @@ const Navbar = () => {
         </div>
 
         <Button>Book Now</Button>
-
     </div>
   )
 }

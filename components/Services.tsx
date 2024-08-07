@@ -13,6 +13,7 @@ import { GiDna1 } from "react-icons/gi";
 
 const Services = () => {
   return (
+    
     <div className="flex lg:flex-row sm:flex-col  bg-zinc-950 min-h-[85vh] rounded-[2rem] px-12 py-20">
         <section className="lg:w-1/5 sm:w-full">
             <h1 className="text-4xl text-slate-50 font-semibold mb-2">Our Services</h1>

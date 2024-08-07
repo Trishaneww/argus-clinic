@@ -1,8 +1,8 @@
 export const navItems = [
-    { name: "Our Services", link: "/services" },
+    { name: "Faq", link: "/#faq" },
     { name: "Nurse Hours", link: "/nursehours" },
     { name: "Contact", link: "/contact" },
-    { name: "Nurse Hours", link: "/" },
+    { name: "Holiday Hours", link: "/holidayhours" },
     { name: "After Hours Care", link: "/afterhours" },
 ];
 
