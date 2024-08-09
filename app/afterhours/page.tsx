@@ -15,7 +15,7 @@ const AfterHours = () => {
 
         <Navbar />
 
-        <section className="flex flex-col gap-6 px-20 mt-10">
+        <section className="flex flex-col gap-6 px-20 mt-20">
             <h1 className="text-6xl font-semibold">After Hours</h1>
             <p>As you probably know, office is part of a large group of Family Physicians called the South Oakville FHO (Family Health Organization).</p>
 

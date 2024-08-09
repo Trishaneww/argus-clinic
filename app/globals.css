@@ -202,7 +202,7 @@
   }
 
   .shad-hero-btn {
-    @apply bg-transparent border-slate-900 border-2 text-slate-900 !important;
+    @apply h-[55px] bg-transparent border-slate-900 border-2 text-slate-900 !important;
   }
 
   .shad-gray-btn {

@@ -11,12 +11,15 @@ const Navbar = () => {
   return (
     <div className="flex w-[74%] bg-transparent justify-between items-center h-[80px] rounded-3xl p-4 mt-10 backdrop-blur-md navbar self-center scroll-smooth">
         <div className="flex gap-6">
-          <Image
-            src='/assets/images/logo.png'
-            alt='logo'
-            width={54}
-            height={54}
-          />
+          <Link href='/'>
+            <Image
+              src='/assets/images/logo.png'
+              alt='logo'
+              width={54}
+              height={54}
+            />
+          </Link>
+         
 
           {navItems.map((navItem: any, idx: number) => (
             <Link 
@@ -31,7 +34,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <Button>Book Now</Button>
+        <Button className="shad-hero-btn">Book Now</Button>
     </div>
   )
 }
