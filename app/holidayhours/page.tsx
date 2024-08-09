@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import { holidayHours } from '@/data'
 import React from 'react'
 
 const HolidayHours = () => {
@@ -7,18 +8,31 @@ const HolidayHours = () => {
     <div className="flex flex-col">
         <Navbar />
 
-         <section className="flex flex-col gap-6 px-20 mt-10">
-            <h1 className="text-6xl">Holiday Hours</h1>
-            <p>January 1, Monday - New Year's Day</p>
-            <p>February 19, Monday - Family Day</p>
-            <p>March 29, Friday - Good Friday</p>
-            <p>May 20, Monday - Victoria Day</p>
-            <p>July 1, Monday - Canada Day</p>
-            <p>August 5, Monday - Civic Holiday</p>
-            <p>September 2. Monday - Labour Day</p>
-            <p>October 14. Monday - Thanksgiving</p>
-            <p>December 25, Wednesday - Christmas Day</p>
-            <p>December 26. Thursday - Boxing Dav</p>
+         <section className="flex flex-col gap-6 px-20 mt-20">
+            <h1 className="text-6xl font-semibold">Holiday Hours 2024</h1>
+
+            <div>
+              <div className="flex flex-col w-[650px] p-4 rounded-2xl bg-zinc-50">
+                <div className="flex items-center h-[60px]">
+                  <p className="w-[300px]">Date</p>
+                  <p className="w-[200px]">Holiday</p>
+                  <p className="w-[150px]">Hours</p>
+                </div>
+                {holidayHours.map((holiday) => (
+                  <div className="flex items-center h-[60px]">
+                    <p className="w-[300px]">{holiday.date}</p>
+                    <p className="w-[200px]">{holiday.holiday}</p>
+                    <p className="w-[150px]">{holiday.hours}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div>
+
+              </div>
+
+            </div>
+
          </section>
 
         <Footer />

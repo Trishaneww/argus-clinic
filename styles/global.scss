@@ -27,12 +27,44 @@
     bottom: 0;
     right: 0;
     opacity: 1;
-    background-image: url('../public/assets/images/background11.png');
+    background-image: url('../public/assets/images/background13.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
+
+
+.afterHours {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    scroll-behavior: smooth;
+    background-image: url('../public/assets/images/background14.png');
+}
+
+// .hero {
+//     height: 50vh;
+// }
+
+// .afterHours::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     opacity: 1;
+//     background-image: url('../public/assets/images/background12.jpg');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+//     background-position: center;
+// }
 
 
 .navbar {

@@ -5,11 +5,18 @@ import Footer from '@/components/Footer';
 
 const AfterHours = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-slate-50">
+       {/* <section className="flex flex-col afterHours">
+        <Navbar />
+        <div className="relative flex flex-col gap-4 mt-52 items-center justify-center text-center">
+          <h1 className="text-6xl text-black">After Hours</h1>
+        </div>
+      </section> */}
+
         <Navbar />
 
         <section className="flex flex-col gap-6 px-20 mt-10">
-            <h1 className="text-6xl">After Hours</h1>
+            <h1 className="text-6xl font-semibold">After Hours</h1>
             <p>As you probably know, office is part of a large group of Family Physicians called the South Oakville FHO (Family Health Organization).</p>
 
             <p>There is a FHO doctor, one of our colleagues, on call every evening from Monday to Froday from 5pm to 8pm and as of July 1, 2022, the FHO clinnics started opening most Saturdays            and Sundays.</p>

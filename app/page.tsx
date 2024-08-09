@@ -18,9 +18,9 @@ const Home = ({ searchParams }: SearchParamProps) => {
   // const isAdmin = searchParams?.admin === "true";
 
   return (
-    <div className="flex flex-col bg-slate-100 scroll-smooth">
+    <div className="flex flex-col bg-slate-50 scroll-smooth">
       <Hero />
-      <Services />
+      {/* <Services /> */}
       <Doctors />
       <Faq />
       <Location />
