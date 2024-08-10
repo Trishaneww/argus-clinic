@@ -71,6 +71,18 @@
     scroll-behavior: smooth;
     background-image: url('../public/assets/images/background18.png');
 }
+
+.contact {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    scroll-behavior: smooth;
+    background-image: url('../public/assets/images/contact2.jpg');
+}
 // .hero {
 //     height: 50vh;
 // }

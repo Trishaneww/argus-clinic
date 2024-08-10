@@ -14,20 +14,20 @@ const Hero = () => {
     <div className="flex flex-col">
       <section className="flex flex-col hero">
         <Navbar />
-        <div className="relative flex flex-col gap-4 mt-72 items-center justify-center text-center">
+        <div className="relative flex flex-col gap-2 mt-72 items-center justify-center text-center">
           <h1 className="text-9xl font-bold mb-12 text-slate-900">Argus Doctors</h1>
           <div className="flex justify-center gap-8 w-full flex-wrap">
             <p className="text-4xl font-bold mb-12 text-slate-900">Dr. Katherine Slinger</p>
             <p className="text-4xl font-bold mb-12 text-slate-900">Dr. Sherine Soliman</p>
             <p className="text-4xl font-bold mb-12 text-slate-900">Dr. Grace Lun</p>
           </div>
-          <p className="w-2/5 text-slate-900 text-2xl">Suite 101, 586 Argus Road, Oakville, ON L6J 313</p>
-          <div className="flex flex-col justify-center items-center w-full">
-            <p className=" text-slate-900 text-l">Telephones answered Monday -Thursday 9:15 am - 12:00 pm and 1.15 pm-4pm, Friday 9:15 am - 12:00 pm</p>
-            <p className=" text-slate-900 text-l">Office open Monday - Friday 9:00 am to 5:00 pm</p>
+          <div className="flex flex-col justify-center items-center w-full gap-2">
+            <p className="w-2/5 text-slate-900 text-2xl">Suite 101, 586 Argus Road, Oakville, ON L6J 313</p>
+            <p className=" text-slate-900 text-2xl">Office open Monday - Friday 9:00 am to 5:00 pm</p>
+            <p className=" text-slate-900 text-2xl">Telephones answered Monday -Thursday 9:15 am - 12:00 pm and 1.15 pm-4pm, Friday 9:15 am - 12:00 pm</p>
           </div>
       
-          <Button className="w-[200px]">Book Now</Button>
+          <Button className="w-[200px] h-[55px] mt-6">Book Now</Button>
         </div>
       </section>
 

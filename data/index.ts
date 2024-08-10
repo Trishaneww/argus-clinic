@@ -1,5 +1,5 @@
 export const navItems = [
-    { name: "Faq", link: "/#faq" },
+    { name: "FAQ", link: "/#faq" },
     { name: "Nurse Hours", link: "/nursehours" },
     { name: "Contact", link: "/contact" },
     { name: "Holiday Hours", link: "/holidayhours" },
