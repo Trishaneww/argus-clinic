@@ -47,6 +47,30 @@
     background-image: url('../public/assets/images/background14.jpeg');
 }
 
+
+.holidayHours {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    scroll-behavior: smooth;
+    background-image: url('../public/assets/images/background17.png');
+}
+
+.nurse {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 67vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    scroll-behavior: smooth;
+    background-image: url('../public/assets/images/background18.png');
+}
 // .hero {
 //     height: 50vh;
 // }

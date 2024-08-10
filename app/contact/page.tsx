@@ -12,7 +12,7 @@ const Contact = () => {
     <div className="flex flex-col">
         <Navbar />
 
-        <section className="flex flex-col gap-6 px-20 mt-28">
+        <section className="flex flex-col gap-6 px-20 mt-52">
             <h1 className="text-6xl font-semibold">Contact Us</h1>
             <div className="flex md:flex-row flex-col gap-14">
                 <div className="flex flex-col gap-6 md:w-3/4 w-full mt-8">

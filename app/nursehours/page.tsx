@@ -1,15 +1,24 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import { Button } from '@/components/ui/button'
 import React from 'react'
 
 const NurseHours = () => {
   return (
     <div className="flex flex-col">
+
+        <section className="flex flex-col nurse px-10">
+          <Navbar />
+          <div className="relative flex flex-col gap-4 mt-52 ml-40 items-start w-2/4">
+            <h1 className="text-6xl font-semibold">Nurse Hours</h1>
+            <p className="w-3/4">Get care from a board-certified doctor or specialist on your terms, 24 hours a day, 7 days a week—by phone, video or app. Plus, it's covered by many Medicaid plans.</p>
+            <Button className="w-[200px]">Book Appointment</Button>
+          </div>
+        </section>
+
         <Navbar />
 
-        <section className="flex flex-col gap-6 px-20 mt-10">
-            <h1 className="text-6xl">Nurse Hours</h1>
-
+        <section className="flex flex-col gap-6 px-20 mt-24">
             <div>
                 <p>Monday: 1:00pm - 5:00pm</p>
                 <p>Tuesday: 9:00am - 12:30pm</p>

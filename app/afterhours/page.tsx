@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/global.scss';
 import Navbar from "@/components/Navbar";
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 const AfterHours = () => {
   return (
@@ -15,7 +16,8 @@ const AfterHours = () => {
 
         <Navbar />
 
-        <section className="flex flex-col gap-6 px-20 mt-20">
+        <section className="flex gap-12 px-20 mt-64">
+          <div className="flex flex-col gap-6 w-4/5">
             <h1 className="text-6xl font-semibold">After Hours</h1>
             <p>As you probably know, office is part of a large group of Family Physicians called the South Oakville FHO (Family Health Organization).</p>
 
@@ -28,9 +30,19 @@ const AfterHours = () => {
             <p>Part of the agreed upon terms of the FHO in which you enrolled includes using our After Hours Clinics and avoiding other walk-in clinics.</p>
 
             <p>In the event of an emergency or something life threatening, call 911 or go to the nearest hospital Emergency Room.</p>
+          </div>
+
+          <Image 
+            width={1000}
+            height={1000}
+            src="/assets/images/background14.jpeg"
+            alt="after hours"
+          />
+  
         </section>
 
         <Footer />
+       
         
     </div>
   )

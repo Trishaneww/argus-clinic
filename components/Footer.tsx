@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="flex justify-between  items-center w-full h-[24rem] bg-slate-900  mt-20">
         <section className="w-1/4 flex flex-col gap-4 justify-start">
-            <h1 className="text-slate-50 font-bold text-4xl ml-20">Argus Doctors</h1>
+            <h1 className="text-slate-50 font-bold text-5xl ml-20">Argus Doctors</h1>
             <p className="text-slate-50 ml-20">@2024 Argus Doctors. All rights reserved</p>
         </section>
 
