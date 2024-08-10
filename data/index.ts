@@ -1,6 +1,5 @@
 export const navItems = [
     { name: "FAQ", link: "/#faq" },
-    { name: "Nurse Hours", link: "/nursehours" },
     { name: "Contact", link: "/contact" },
     { name: "Holiday Hours", link: "/holidayhours" },
     { name: "After Hours Care", link: "/afterhours" },
@@ -112,19 +111,23 @@ export const accordion = [
 export const footerCompany = [
   {
     id:1,
-    name: 'About'
+    name: 'Appointment'
   },
   {
     id:2,
-    name: 'Our Services'
+    name: 'Holiday Hours'
   },
   {
     id:3,
-    name: 'Nurse Hours'
+    name: 'FAQ'
   },
   {
     id:4,
     name: 'After Hours Care'
+  },
+  {
+    id:5,
+    name: 'Contact'
   },
 ]
 

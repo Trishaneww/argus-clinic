@@ -4,15 +4,15 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="flex justify-between  items-center w-full h-[24rem] bg-slate-900  mt-20">
-        <section className="w-1/4 flex flex-col gap-4 justify-start">
-            <h1 className="text-slate-50 font-bold text-5xl ml-20">Argus Doctors</h1>
-            <p className="text-slate-50 ml-20">@2024 Argus Doctors. All rights reserved</p>
+    <div className="flex flex-col lg:flex-row justify-between  p-10 lg:items-center w-full lg:h-[24rem] bg-slate-900  mt-20">
+        <section className="lg:w-1/4 flex flex-col gap-4 justify-start">
+            <h1 className="text-slate-50 font-bold text-3xl lg:text-5xl lg:ml-20">Argus Doctors</h1>
+            <p className="text-slate-50 lg:ml-20 mb-9 lg:mb-0">@2024 Argus Doctors. All rights reserved</p>
         </section>
 
-        <section className="flex gap-12 justify-center items-start w-3/4">
+        <section className="flex gap-12 lg:justify-center items-start w-3/4 flex-wrap">
             <div className="flex flex-col gap-2">
-                <p className="text-slate-50 font-semibold">Company</p>
+                <p className="text-slate-50 font-semibold">Clinic</p>
                 {footerCompany.map((link) => (
                     <Link href='/' className="text-slate-300">
                         <p>{link.name}</p>

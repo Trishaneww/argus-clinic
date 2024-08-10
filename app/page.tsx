@@ -21,7 +21,7 @@ const Home = ({ searchParams }: SearchParamProps) => {
     <div className="flex flex-col bg-slate-50 scroll-smooth">
       <Hero />
       {/* <Services /> */}
-      <Doctors />
+      {/* <Doctors /> */}
       <Faq />
       <Location />
       <Footer />
