@@ -4,13 +4,13 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between  p-10 lg:items-center w-full lg:h-[24rem] bg-slate-900  mt-20">
-        <section className="lg:w-1/4 flex flex-col gap-4 justify-start">
-            <h1 className="text-slate-50 font-bold text-3xl lg:text-5xl lg:ml-20">Argus Doctors</h1>
-            <p className="text-slate-50 lg:ml-20 mb-9 lg:mb-0">@2024 Argus Doctors. All rights reserved</p>
+    <div className="flex flex-col xl:flex-row justify-between  p-10 xl:items-center w-full xl:h-[24rem] bg-slate-900  mt-20">
+        <section className="xl:w-1/4 flex flex-col gap-4 justify-start">
+            <h1 className="text-slate-50 font-bold text-3xl xl:text-5xl xl:ml-20">Argus Doctors</h1>
+            <p className="text-slate-50 xl:ml-20 mb-9 xl:mb-0">@2024 Argus Doctors. All rights reserved</p>
         </section>
 
-        <section className="flex gap-12 lg:justify-center items-start w-3/4 flex-wrap">
+        <section className="flex gap-12 xl:justify-center items-start xl:w-3/4 flex-wrap">
             <div className="flex flex-col gap-2">
                 <p className="text-slate-50 font-semibold">Clinic</p>
                 {footerCompany.map((link) => (

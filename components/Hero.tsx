@@ -13,25 +13,25 @@ const Hero = () => {
   return (
     <div className="flex flex-col">
       <section className="flex flex-col hero">
-        {/* <Navbar /> */}
+        <Navbar />
         <div className="relative flex flex-col gap-2 mt-72 items-center justify-center text-center">
-          <h1 className=" text-5xl lg:text-9xl font-bold mb-12 text-slate-900">Argus Doctors</h1>
-          <div className="flex justify-center gap-2 lg:gap-8 w-full flex-wrap mb-12">
-            <p className="lg:text-4xl font-bold  text-slate-900">Dr. Katherine Slinger</p>
-            <p className="lg:text-4xl font-bold  text-slate-900">Dr. Sherine Soliman</p>
-            <p className="lg:text-4xl font-bold  text-slate-900">Dr. Grace Lun</p>
+          <h1 className=" text-5xl lg:text-9xl font-bold mb-4 lg:mb-12 text-slate-900">Argus Doctors</h1>
+          <div className="flex justify-center gap-2 lg:gap-8 w-full flex-wrap mb-4 lg:mb-12">
+            <p className="text-xl lg:text-4xl font-bold  text-slate-900">Dr. Katherine Slinger</p>
+            <p className="text-xl lg:text-4xl font-bold  text-slate-900">Dr. Sherine Soliman</p>
+            <p className="text-xl lg:text-4xl font-bold  text-slate-900">Dr. Grace Lun</p>
           </div>
-          <div className="flex flex-col justify-center items-center w-full gap-2">
-            <p className="w-2/5 text-slate-900 text-2xl">Suite 101, 586 Argus Road, Oakville, ON L6J 313</p>
-            <p className=" text-slate-900 text-2xl">Office open Monday - Friday 9:00 am to 5:00 pm</p>
-            <p className=" text-slate-900 text-2xl">Telephones answered Monday -Thursday 9:15 am - 12:00 pm and 1.15 pm-4pm, Friday 9:15 am - 12:00 pm</p>
+          <div className="flex flex-col justify-center items-center w-full gap-2 p-2">
+            <p className="lg:w-2/5 text-slate-900 lg:text-2xl">Suite 101, 586 Argus Road, Oakville, ON L6J 313</p>
+            <p className=" text-slate-900 text-md lg:text-2xl">Office open Monday - Friday 9:00 am to 5:00 pm</p>
+            <p className=" text-slate-900 text-md lg:text-2xl">Telephones answered Monday -Thursday 9:15 am - 12:00 pm and 1.15 pm-4pm, Friday 9:15 am - 12:00 pm</p>
           </div>
       
-          <Button className="w-[200px] h-[55px] mt-6">Book Now</Button>
+          <Button className="w-[200px] h-[55px] lg:mt-6">Book Now</Button>
         </div>
       </section>
 
-      <section className="flex flex-col lg:w-3/5 self-center text-center gap-4 my-14 mt-44 p-4">
+      <section className="flex flex-col md:w-4/5 lg:w-3/5 self-center text-center gap-4 my-14 mt-44 p-4">
         <h1 className="text-3xl md:text-5xl  font-semibold mb-6">Your Appointment</h1>
         <p>Appointments are always pre-booked for the doctors and the nurse, you can do this by phone or the online booking portal. The office does not operate on a walk-in basis at any time. It is helpful if you have your schedule before calling  to make an appointment. </p>
 
