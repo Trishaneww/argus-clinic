@@ -14,9 +14,9 @@ const Contact = () => {
     <div className="flex flex-col">
 
         <section className="flex flex-col contact px-10">
-          {/* <Navbar /> */}
+          <Navbar />
           <div className="relative flex flex-col gap-4 mt-52 xl:ml-40 items-start xl:w-2/4">
-            <h1 className="text-6xl font-semibold">Contact</h1>
+            <h1 className="text-4xl md:text-6xl font-semibold">Contact</h1>
             <p className="xl:w-3/4">Get care from a board-certified doctor or specialist on your terms, it's covered by many Medicaid plans.</p>
             <Button className="w-[200px]">Get Directions <MdArrowOutward className="ml-2"/> </Button>
           </div>

@@ -39,7 +39,7 @@ const Hero = () => {
 
         <p>At the present time, wearing a mask is now optional but we do ask that if you have any type of respiratory symptoms that you do wear a mask.</p>
 
-        <p>If you have COVID symptoms we request that vou try to do a test before coming to the office. In the case of a positive test let us know and your appointment will be virtual or by telephone instead of in the office. COVID test kits are available in the office and at locations listed on the <a href="https://www.halton.ca/For-Residents/Public-Health" className="text-sky-600">Halton Region Public Health website.</a></p>
+        <p>If you have COVID symptoms we request that vou try to do a test before coming to the office. In the case of a positive test let us know and your appointment will be virtual or by telephone instead of in the office. COVID test kits are available in the office and at locations listed on the <a href="https://www.halton.ca/For-Residents/Public-Health" target="_blank" className="text-sky-600">Halton Region Public Health website.</a></p>
 
         <p>Blance ensure vou have a valid health card and let us know if it has recently been renewed. This is Isalso a good time to provide any updates to your address. telephone number or email address. On arrival at the office we do ask COVID screening questions and request you sanitize your hands. Please wear a mask if you have any type of respiratory symptoms.</p>
 
