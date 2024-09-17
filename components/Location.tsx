@@ -38,11 +38,6 @@ const Location = () => {
             </div>
 
             <div className="flex justify-start items-center gap-4 w-full">
-                <MdOutlineMail size={34}/>
-                <p className="text-sm">argusclinic@gmail.com</p>
-            </div>
-
-            <div className="flex justify-start items-center gap-4 w-full">
                 <MdPhone size={32}/>
                 <p className="text-sm">905-842-2410</p>
             </div>

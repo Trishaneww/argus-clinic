@@ -14,9 +14,9 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Argus Clinic",
   description:
-    "Medical clinnic based in oakville ontario.",
+    "Medical clinic based in oakville ontario.",
   icons: {
-    icon: "/assets/icons/logo-icon.svg",
+    icon: "/assets/icons/favicon.ico",
   },
 };
 

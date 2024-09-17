@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
                 <p className="text-slate-50 font-semibold">Clinic</p>
                 {footerCompany.map((link) => (
-                    <Link href='/' className="text-slate-300">
+                    <Link href={link.link} className="text-slate-300">
                         <p>{link.name}</p>
                     </Link>
                 ))}
@@ -34,11 +34,9 @@ const Footer = () => {
 
             <div className="flex flex-col gap-2">
                 <p className="text-slate-50 font-semibold">Contact Us</p>
-                {contactInfo.map((link) => (
-                    <Link href='/' className="text-slate-300">
-                        <p>{link.name}</p>
-                    </Link>
-                ))}
+                <p className="text-slate-300">905-842-2410</p>
+                <a href="https://www.google.com/maps/dir//586+Argus+Rd+Oakville,+ON+L6J+3J3/@43.4571391,-79.6856208,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x882b5ce7be055a59:0x754258adbb819e55" target="_blank" className="text-slate-300">Suite 101, 586 Argus Road, Oakville, ON L6J 313
+                </a>
             </div>
 
             <div className="flex flex-col gap-2">

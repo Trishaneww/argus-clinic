@@ -17,8 +17,8 @@ const Contact = () => {
           <Navbar />
           <div className="relative flex flex-col gap-4 mt-52 xl:ml-40 items-start xl:w-2/4">
             <h1 className="text-4xl md:text-6xl font-semibold">Contact</h1>
-            <p className="xl:w-3/4">Get care from a board-certified doctor or specialist on your terms, it's covered by many Medicaid plans.</p>
-            <Button className="w-[200px]">Get Directions <MdArrowOutward className="ml-2"/> </Button>
+            <p className="xl:w-3/4">For any questions or to get in touch, please contact us by phone or email.</p>
+            <a href="https://www.google.com/maps/dir//586+Argus+Rd+Oakville,+ON+L6J+3J3/@43.4571391,-79.6856208,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x882b5ce7be055a59:0x754258adbb819e55" target="_blank"><Button className="w-[200px]">Get Directions <MdArrowOutward className="ml-2"/> </Button></a>
           </div>
         </section>
 
@@ -26,7 +26,7 @@ const Contact = () => {
             {/* <h1 className="text-6xl font-semibold">Contact Us</h1> */}
             <div className="flex md:flex-row flex-col gap-14">
                 <div className="flex flex-col gap-6 md:w-3/4 w-full mt-8 text-center md:text-left">
-                    <p>The office is located at 586 Argus Road, Suite 101 Oakville. ON L61 313 on the main floor of the building with street entrance doors.The nearest intersection is Trafalgar Road and Cross Avenue near the Oakville GO station.</p>
+                    <p>The office is located at 586 Argus Road, Suite 101 Oakville. ON L61 313 on the main floor of the building with street entrance doors. The nearest intersection is Trafalgar Road and Cross Avenue near the Oakville GO station.</p>
                     {/* <div className="flex justify-start items-center gap-4 w-full">
                         <MdPhone size={22}/>
                         <p className="text-sm">905-842-2410</p>
@@ -42,7 +42,7 @@ const Contact = () => {
 
                     <p>The busiest period tends to be from 9:15 am - 11 am daily and we suggest that you wait until after this time unless your call is urgent. We have high demand so please be patient.</p>
  
-                    <p>Please de let us know your preterence for first point of contact. If you are not available when we call, a voice mail is left asking you to call the office. If you have previously agreed to receiving routine test results by email we will use this method of contact first. Please do keep the office informed if you change your email address. If a specialist office has not contacted you with appointment details we will send you the information in an email if you have provided one to the office. If the appointment is quite soon we will also contact you by telephone. Please let us know if we can leave test results on voicemail or email, otherwise make an appointment to review with you doctor
+                    <p>Please do let us know your preference for the first point of contact. If you are not available when we call, a voicemail is left asking you to call the office. If you have previously agreed to receive routine test results by email we will use this method of contact first. Please keep the office informed if you change your email address. If a specialist office has not contacted you with appointment details we will send you the information in an email if you have provided one to the office. If the appointment is quite soon we will also contact you by telephone. Please let us know if we can leave test results on voicemail or email, otherwise make an appointment to review with your doctor
                     </p>
 
                     <p>Appointments at hospitals for diagnostic imaging are nearly always taxed to the office and we will call you with details. If you are awaiting such an appointment and we have to leave a voice mail, we will mention that we need to give you appointment details.
@@ -62,11 +62,6 @@ const Contact = () => {
                         <div className="flex justify-start items-center gap-4 w-full">
                             <IoMdPrint size={36}/>
                             <p className="text-sm">905-842-7376</p>
-                        </div>
-
-                        <div className="flex justify-start items-center gap-4 w-full">
-                            <MdOutlineMail size={34}/>
-                            <p className="text-sm">argusclinic@gmail.com</p>
                         </div>
 
                         <div className="flex justify-start items-center gap-4 w-full">

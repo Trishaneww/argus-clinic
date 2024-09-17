@@ -16,8 +16,8 @@ const HolidayHours = () => {
           <Navbar />
           <div className="relative flex flex-col gap-4 mt-52 xl:ml-40 items-start xl:w-2/4">
             <h1 className="text-4xl md:text-6xl font-semibold">Holiday Hours 2024</h1>
-            <p className="xl:w-3/4">Get care from a board-certified doctor or specialist on your terms, it's covered by many Medicaid plans.</p>
-            <Button className="w-[200px]">Contact</Button>
+            <p className="xl:w-3/4">Please note our adjusted hours during the holiday season to ensure you receive the care you need.</p>
+            <a href="/#contact"><Button className="w-[200px]">Contact</Button></a>
           </div>
         </section>
         {/* <Navbar /> */}
@@ -41,6 +41,7 @@ const HolidayHours = () => {
                   ))}
               </div>
             </div>
+            
 
               
 
@@ -57,11 +58,6 @@ const HolidayHours = () => {
                         <div className="flex justify-start items-center gap-4 w-full">
                             <IoMdPrint size={36}/>
                             <p className="text-sm">905-842-7376</p>
-                        </div>
-
-                        <div className="flex justify-start items-center gap-4 w-full">
-                            <MdOutlineMail size={34}/>
-                            <p className="text-sm">argusclinic@gmail.com</p>
                         </div>
 
                         <p className="text-left text-sm md:text-base">Telephones answered Mon-Thurs 9:15 am - 12:00 pm and 1:15pm - 4:00 pm, Fri 9:15 am - 12:00 pm</p>
