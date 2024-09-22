@@ -166,7 +166,7 @@ export const resources = [
   },
   {
     id:4,
-    title: 'Halton Region Public Health website',
+    title: 'Halton Region Public Health',
     link: 'https://www.halton.ca/For-Residents/Public-Health'
   }
 ]

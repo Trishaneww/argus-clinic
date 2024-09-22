@@ -14,7 +14,7 @@ const Faq = () => {
     <div className="mt-40 scroll-smooth">
         <section className="flex flex-col gap-6 items-center mb-10 text-center p-2">
             <h1 className="text-slate-800  text-3xl md:text-5xl font-semibold">Frequently Asked Questions</h1>
-            <p>*Please note that Dr. MacAulay will be with us until the end of December while Dr. Lun is on leave*</p>
+            <p className="w-[92%]">*Please note that Dr. MacAulay will be with us until the end of December while Dr. Lun is on leave*</p>
         </section>
 
         <div className="flex flex-col items-center justify-center gap-6 w-full p-4">

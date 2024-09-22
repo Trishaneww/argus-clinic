@@ -39,14 +39,14 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
-    images: { unoptimized: true },
-    typescript: {
-        ignoreBuildErrors: true,
-    },
-    eslint: {
-      ignoreDuringBuilds: true,
+  output: 'export',
+  typescript: {
+      ignoreBuildErrors: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+},
+images: { unoptimized: true }
 };
 
 export default withSentryConfig(nextConfig, {

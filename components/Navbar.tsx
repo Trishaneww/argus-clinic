@@ -49,7 +49,7 @@ const Navbar = () => {
 
 
 
-        <Link href="https://ocean.cognisantmd.com/intake/patients.html?linkRef=68a0f1d3-63f4-4d2e-a713-f448a57556c9#/online-booking" className="hidden lg:flex">
+        <Link href="/" className="hidden lg:flex">
         <Button className="w-[150px]">Book Now</Button>
         </Link>
 
@@ -67,7 +67,7 @@ const Navbar = () => {
       <a href="/afterhours">After Hours Care</a> 
       <a href="/holidayhours">Holiday Hours</a>
       <a href="/contact">Contact</a>
-      <Link href="https://ocean.cognisantmd.com/intake/patients.html?linkRef=68a0f1d3-63f4-4d2e-a713-f448a57556c9#/online-booking" className="md:flex">
+      <Link href="/" className="md:flex">
         <Button className="w-[150px]">Book Now</Button>
         </Link>
       
