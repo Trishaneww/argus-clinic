@@ -1,6 +1,5 @@
 export const navItems = [
     { name: "FAQ", link: "/#faq" },
-    { name: "Nurse Hours", link: "/nursehours" },
     { name: "Contact", link: "/contact" },
     { name: "Holiday Hours", link: "/holidayhours" },
     { name: "After Hours Care", link: "/afterhours" },
@@ -112,33 +111,62 @@ export const accordion = [
 export const footerCompany = [
   {
     id:1,
-    name: 'About'
+    name: 'Appointment',
+    link: '/'
   },
   {
     id:2,
-    name: 'Our Services'
+    name: 'Holiday Hours',
+    link: '/holidayhours'
   },
   {
     id:3,
-    name: 'Nurse Hours'
+    name: 'FAQ',
+    link:'/#faq'
   },
   {
     id:4,
-    name: 'After Hours Care'
+    name: 'After Hours Care',
+    link: '/afterhours'
+  },
+  {
+    id:5,
+    name: 'Contact',
+    link: '/contact' 
   },
 ]
 
 export const contactInfo = [
-  {
-    id:1,
-    name:'info@argusclinic.com'
-  },
   {
     id:2,
     name:'905-842-2410'
   },
   {
     id:3,
-    name:'586 Argus Road, Oakville'
+    name:'Suite 101, 586 Argus Road, Oakville, ON L6J 313'
+  }
+]
+
+
+export const resources = [
+  {
+    id: 1,
+    title: 'COVID-19 Vaccines',
+    link: 'https://www.halton.ca/For-Residents/Immunizations-Preventable-Disease/Immunization/COVID-19-Vaccines'
+  },
+  {
+    id: 2,
+    title: 'Glycemic Index Food-Guide',
+    link: 'https://guidelines.diabetes.ca/GuideLines/media/Docs/Patient%20Resources/glycemic-index-food-guide.pdf'
+  },
+  {
+    id: 3,
+    title: 'Calcium Calulator',
+    link: 'https://osteoporosis.ca/calcium-calculator/'
+  },
+  {
+    id:4,
+    title: 'Halton Region Public Health',
+    link: 'https://www.halton.ca/For-Residents/Public-Health'
   }
 ]

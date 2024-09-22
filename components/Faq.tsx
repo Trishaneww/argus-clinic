@@ -11,13 +11,13 @@ import Image from 'next/image'
 
 const Faq = () => {
   return (
-    <div className="mt-40 scroll-smooth" id="faq">
-        <section className="flex flex-col gap-6 items-center mb-10 text-center">
-            <h1 className="text-slate-800 text-5xl font-semibold">Frequently Asked Questions</h1>
-            <p className="text-slate-500 w-2/3">Find the answers to your questions here</p>
+    <div className="mt-40 scroll-smooth">
+        <section className="flex flex-col gap-6 items-center mb-10 text-center p-2">
+            <h1 className="text-slate-800  text-3xl md:text-5xl font-semibold">Frequently Asked Questions</h1>
+            <p className="w-[92%]">*Please note that Dr. MacAulay will be with us until the end of December while Dr. Lun is on leave*</p>
         </section>
 
-        <div className="flex justify-center gap-6 w-full p-4">
+        <div className="flex flex-col items-center justify-center gap-6 w-full p-4">
             {/* <Image 
                 src="/assets/images/doctors.png"
                 height={400}
@@ -25,15 +25,21 @@ const Faq = () => {
                 alt="doctors"
             /> */}
 
-            <Accordion type="single" collapsible className="flex flex-col gap-4 w-3/5">
-                {accordion.map((accordion:any, idx:number) => (
-                    <AccordionItem value={`item-${idx}`} className="border-none p-4 bg-white rounded-2xl">
-                    <AccordionTrigger>{accordion.item}</AccordionTrigger>
-                        <AccordionContent>
+            <Accordion type="single" collapsible className="flex flex-col gap-4 md:w-3/5">
+                {accordion.slice(0,2).map((accordion:any, idx:number) => (
+                    <AccordionItem value={`item-${idx}`} className="border-none p-4 rounded-2xl text-base lg:text-lg">
+                    <AccordionTrigger className="text-left">{accordion.item}</AccordionTrigger>
+                        <AccordionContent className="text-base lg:text-lg mt-4">
                             {accordion.content}
                         </AccordionContent>
                     </AccordionItem>
                 ))}
+                 <AccordionItem value={"question3 "} className="border-none p-4 rounded-2xl text-base lg:text-lg">
+                    <AccordionTrigger>How do I book an appointment?</AccordionTrigger>
+                        <AccordionContent className="text-base lg:text-lg mt-4">
+                            <p>To book an appointment, simply click <a href="/" className="text-blue-400">here</a>. You'll be directed to our secure online booking form, powered by Ocean, a trusted medical software.</p>
+                        </AccordionContent>
+                    </AccordionItem>
             </Accordion>
         </div>
 

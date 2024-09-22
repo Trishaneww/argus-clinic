@@ -1,28 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PatientForm } from "@/components/forms/PatientForm";
-import { PasskeyModal } from "@/components/PasskeyModal";
-import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import '../styles/global.scss';
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import Hero from "@/components/Hero";
-import Doctors from "@/components/Doctors";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Location from "@/components/Location";
 import Services from "@/components/Services";
 
-const Home = ({ searchParams }: SearchParamProps) => {
+const Home = () => {
   // const isAdmin = searchParams?.admin === "true";
 
   return (
     <div className="flex flex-col bg-slate-50 scroll-smooth">
       <Hero />
       {/* <Services /> */}
-      <Doctors />
+      {/* <Doctors /> */}
+      <div id="faq"></div>
       <Faq />
+      <div id="contact"className="mb-10"></div>
       <Location />
       <Footer />
 
