@@ -24,9 +24,8 @@ const Contact = () => {
 
         <section className="flex flex-col gap-6 px-4 xl:px-20 mt-24">
             {/* <h1 className="text-6xl font-semibold">Contact Us</h1> */}
-            <div className="flex md:flex-row flex-col gap-14">
-                <div className="flex flex-col gap-6 md:w-3/4 w-full mt-8 text-center md:text-left">
-                    <p>The office is located at 586 Argus Road, Suite 101 Oakville ON L61 313 on the main floor of the building with street entrance doors. The nearest intersection is Trafalgar Road and Cross Avenue near the Oakville GO station.</p>
+            <div className="flex justify-center md:flex-row flex-col gap-14">
+                <div className="flex flex-col gap-6 md:w-1/3 w-full mt-8 text-center md:text-left text-base lg:text-lg">
                     {/* <div className="flex justify-start items-center gap-4 w-full">
                         <MdPhone size={22}/>
                         <p className="text-sm">905-842-2410</p>
@@ -40,9 +39,7 @@ const Contact = () => {
                     <p>Mon-Thurs 9:15 am - 12:00 pm and 1:15pm - 4:00 pm</p>
                     <p>Fri 9:15 am - 12:00 pm</p> */}
 
-                    <p>The busiest period tends to be from 9:15 am - 11:00 am daily and we suggest that you wait until after this time unless your call is urgent. We have high demand so please be patient.</p>
- 
-                    <p>Please do let us know your preference for the first point of contact. If you are not available when we call, a voicemail is left asking you to call the office. If you have previously agreed to receive routine test results by email we will use this method of contact first. Please keep the office informed if you change your email address. If a specialist office has not contacted you with appointment details we will send you the information in an email if you have provided one to the office. If the appointment is quite soon we will also contact you by telephone. Please let us know if we can leave test results on voicemail or email, otherwise make an appointment to review with your doctor.
+                    <p>The phone lines tend to be very busy between 9:15 am and 11:00 am. If the appointment is quite soon we will also contact you by telephone. Please let us know if we can leave test results on voicemail or email, otherwise make an appointment to review with your doctor.
                     </p>
 
                     <p>Appointments at hospitals for diagnostic imaging are nearly always faxed to the office and we will call you with details. If you are awaiting such an appointment and we have to leave a voice mail, we will mention that we need to give you appointment details.
@@ -56,7 +53,7 @@ const Contact = () => {
                     <CardContent className="flex flex-col gap-4">
                         <div className="flex justify-start items-center gap-4 w-full">
                             <IoLocationOutline size={44}/>
-                            <p className="text-sm">Suite 101, 586 Argus Road, Oakville, ON L6J 313</p>
+                            <p className="text-sm">Suite 101, 586 Argus Road, Oakville, ON L6J 3J3</p>
                         </div>
 
                         <div className="flex justify-start items-center gap-4 w-full">

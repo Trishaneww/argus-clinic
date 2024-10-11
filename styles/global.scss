@@ -4,16 +4,15 @@
 @use "./partials/paddings" as *;
 
 
-.hero {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    scroll-behavior: smooth;
-}
+// .hero {
+//     display:flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     scroll-behavior: smooth;
+// }
 
 // .hero {
 //     height: 50vh;
@@ -21,7 +20,6 @@
 
 .hero::before {
     content: '';
-    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -32,6 +30,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    height: 80vh;
 }
 
 
@@ -103,7 +102,7 @@
 // }
 
 
-nav{
+nav {
     height: 10px;
     width:30px;
     background-color: rgba(203, 54, 54, 0);
@@ -182,4 +181,10 @@ nav{
       left: 0;
       z-index: 9;
     }
+  }
+
+  @media(max-width: 600px){
+    .hero::before {
+      height: 80vh;
+  }
   }

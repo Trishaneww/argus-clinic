@@ -17,15 +17,15 @@ import { resources } from "@/data"
  
 
  
-export function NavDropDown() {
+export function NavDropDown2() {
   return (
-    <NavigationMenu className="-ml-16">
+    <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-base font-normal">Patient Resources</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-base font-normal">Useful Links</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="flex flex-wrap w-[200px] md:w-[250px]  gap-1 p-2 md:p-4">
-              {resources.slice(0,2).map((component) => (
+              {resources.slice(2,4).map((component) => (
                 <a href={component.link} key={component.id} target="_blank" className="w-full lg:w-4/5 p-2">{component.title}</a>
               ))}
             </ul>

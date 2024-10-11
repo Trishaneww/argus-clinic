@@ -4,8 +4,7 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-  } from "@/components/ui/accordion"
-import { accordion } from '@/data'
+  } from "@/components/ui/accordion";
 import Image from 'next/image'
 
 
@@ -37,7 +36,7 @@ const Faq = () => {
                  <AccordionItem value={"question3 "} className="border-none p-4 rounded-2xl text-base lg:text-lg">
                     <AccordionTrigger>How do I book an appointment?</AccordionTrigger>
                         <AccordionContent className="text-base lg:text-lg mt-4">
-                            <p>To book an appointment, simply click <a href="/" className="text-blue-400">here</a>. You'll be directed to our secure online booking form, powered by Ocean, a trusted medical software.</p>
+                            <p>To book an appointment online, simply click <a href="/" className="text-blue-400">here</a>. You'll be directed to our secure online booking form.</p>
                         </AccordionContent>
                     </AccordionItem>
             </Accordion>

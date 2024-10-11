@@ -7,6 +7,7 @@ import '../styles/global.scss';
 import React, { useState } from 'react';
 import '../styles/global.scss';
 import { NavDropDown } from './Navdropdown'
+import { NavDropDown2 } from './Navdropdown2'
 
 
 
@@ -21,9 +22,9 @@ const Navbar = () => {
 
   
   return (
-    <div className="flex w-full xl:w-[74%] justify-between md:justify-between items-center h-[80px] md:rounded-3xl px-6 md:p-6 md:mt-10 backdrop-blur-md navbar self-center scroll-smooth z-10 fixed mb-20 bg-slate-50">
+    <div className="flex w-full justify-between lg:justify-center items-center h-[80px]  px-6 md:p-6 backdrop-blur-md navbar self-center scroll-smooth z-10 fixed mb-20 bg-slate-50">
         
-        <div className="gap-6 flex">
+        <div className="flex lg:gap-12 justify-start lg:justify-center w-full px-2">
           <Link href='/' className={cn(
                 "relative dark:text-slate-50 items-center flex space-x-1 text-slate-800 dark:hover:text-slate-300 hover:text-slate-500"
               )}><span className="!cursor-pointe">Home</span>
@@ -44,14 +45,18 @@ const Navbar = () => {
               <span className="!cursor-pointer">{navItem.name}</span>
             </Link>
           ))}
-          <NavDropDown />
+
+          <div className="hidden lg:flex gap-4 items-start justify-start w-[500px]">
+            <NavDropDown />
+            <NavDropDown2 />
+          </div>
         </div>
 
 
-
+{/* 
         <Link href="/" className="hidden lg:flex">
         <Button className="w-[150px]">Book Now</Button>
-        </Link>
+        </Link> */}
 
         <nav className="lg:hidden">
     <input type="checkbox" id="sidebar-active" />
@@ -67,9 +72,10 @@ const Navbar = () => {
       <a href="/afterhours">After Hours Care</a> 
       <a href="/holidayhours">Holiday Hours</a>
       <a href="/contact">Contact</a>
-      <Link href="/" className="md:flex">
-        <Button className="w-[150px]">Book Now</Button>
-        </Link>
+      <a href="/faq">FAQ</a>
+      <Link href="https://ocean.cognisantmd.com/online-booking/cddcbae7-4cba-4ebd-9e93-7b5aceb285e5">
+          <Button className="w-[220px] h-[60px] lg:mt-6">Online appointment booking</Button>
+      </Link>
       
     </div>
   </nav>

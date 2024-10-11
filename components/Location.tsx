@@ -29,7 +29,7 @@ const Location = () => {
         <CardContent className="flex md:flex-col gap-4 flex-wrap">
             <div className="flex justify-start items-center gap-4 w-full">
                 <IoLocationOutline size={44}/>
-                <p className="text-sm">Suite 101, 586 Argus Road, Oakville, ON L6J 313</p>
+                <p className="text-sm">Suite 101, 586 Argus Road, Oakville, ON L6J 3J3</p>
             </div>
 
             <div className="flex justify-start items-center gap-4 w-full">
