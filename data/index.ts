@@ -1,8 +1,8 @@
 export const navItems = [
-    { name: "FAQ", link: "/#faq" },
     { name: "Contact", link: "/contact" },
     { name: "Holiday Hours", link: "/holidayhours" },
     { name: "After Hours Care", link: "/afterhours" },
+    { name: "FAQ", link: "/faq" },
 ];
 
 export const doctors = [
@@ -90,7 +90,7 @@ export const holidayHours = [
 
 ]
 
-export const accordion = [
+export const faqs = [
     {
         id: 1,
         item: 'Is wearing a mask mandatory?',
@@ -98,7 +98,7 @@ export const accordion = [
     },
     {
         id: 2,
-        item: 'When is it suitable to use the after office hours ?',
+        item: 'When is it suitable to use the after hours FHO clinics?',
         content: 'This is only for URGENT appointments and not meant for routine visits. In case of a same day URGENT problem, please call our office first to request an appointment and we will try to fit you in the same or next day. Otherwise, if it is after 5 pm, please call the FHO phone line at 905-815-9177 and you will be informed of the location and phone number of the FHO Clinic for that night or the Saturday or Sunday.'
     },
     {
@@ -122,7 +122,7 @@ export const footerCompany = [
   {
     id:3,
     name: 'FAQ',
-    link:'/#faq'
+    link:'/faq'
   },
   {
     id:4,
@@ -150,6 +150,11 @@ export const contactInfo = [
 
 export const resources = [
   {
+    id:4,
+    title: 'Halton Region Public Health',
+    link: 'https://www.halton.ca/For-Residents/Public-Health'
+  },
+  {
     id: 1,
     title: 'COVID-19 Vaccines',
     link: 'https://www.halton.ca/For-Residents/Immunizations-Preventable-Disease/Immunization/COVID-19-Vaccines'
@@ -164,9 +169,4 @@ export const resources = [
     title: 'Calcium Calulator',
     link: 'https://osteoporosis.ca/calcium-calculator/'
   },
-  {
-    id:4,
-    title: 'Halton Region Public Health',
-    link: 'https://www.halton.ca/For-Residents/Public-Health'
-  }
 ]

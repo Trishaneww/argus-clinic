@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
 import { holidayHours } from '@/data'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { IoMdPrint } from 'react-icons/io'
 import { IoLocationOutline } from 'react-icons/io5'
@@ -17,7 +18,9 @@ const HolidayHours = () => {
           <div className="relative flex flex-col gap-4 mt-52 xl:ml-40 items-start xl:w-2/4">
             <h1 className="text-4xl md:text-6xl font-semibold">Holiday Hours 2024</h1>
             <p className="xl:w-3/4">Please note our adjusted hours during the holiday season to ensure you receive the care you need.</p>
-            <a href="/#contact"><Button className="w-[200px]">Contact</Button></a>
+            <Link href="https://ocean.cognisantmd.com/online-booking/cddcbae7-4cba-4ebd-9e93-7b5aceb285e5">
+            <Button className="w-[220px] h-[50px] mt-12 lg:mt-6">Online appointment booking</Button>
+          </Link>
           </div>
         </section>
         {/* <Navbar /> */}
@@ -65,7 +68,7 @@ const HolidayHours = () => {
 
                         <div className="flex justify-start items-center gap-4 w-full">
                             <IoLocationOutline size={44}/>
-                            <p className="text-sm text-left">Suite 101, 586 Argus Road, Oakville, ON L6J 313</p>
+                            <p className="text-sm text-left">Suite 101, 586 Argus Road, Oakville, ON L6J 3J3</p>
                         </div>
 
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.1654527972723!2d-79.6904917082211!3d43.45714289061273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b5ce7be055a59%3A0x754258adbb819e55!2s586%20Argus%20Rd%2C%20Oakville%2C%20ON%20L6J%203J3!5e0!3m2!1sen!2sca!4v1723251218472!5m2!1sen!2sca"  loading="lazy"  className="w-full h-[18rem]"></iframe>

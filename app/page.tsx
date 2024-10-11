@@ -16,11 +16,12 @@ const Home = () => {
 
   return (
     <div className="flex flex-col bg-slate-50 scroll-smooth">
+      <Navbar />
       <Hero />
       {/* <Services /> */}
       {/* <Doctors /> */}
-      <div id="faq"></div>
-      <Faq />
+      {/* <div id="faq"></div>
+      <Faq /> */}
       <div id="contact"className="mb-10"></div>
       <Location />
       <Footer />
