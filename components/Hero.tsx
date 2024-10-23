@@ -12,16 +12,16 @@ const Hero = () => {
       <section className="flex flex-col hero">
 
         <div className="absolute w-full flex flex-col gap-2 mt-40 lg:mt-52 items-center justify-center text-center">
-          <h1 className=" text-5xl lg:text-8xl font-bold mb-4 lg:mb-12 text-slate-900">Argus Doctors</h1>
+          <h1 className=" text-5xl lg:text-8xl font-bold mb-4 lg:mb-12 text-slate-50">Argus Doctors</h1>
           <div className="flex justify-center gap-2 lg:gap-8 w-full flex-wrap mb-4 lg:mb-12">
-            <p className="text-xl lg:text-4xl font-bold  text-slate-900">Dr. Sherine Soliman </p>
-            <p className="text-xl lg:text-4xl font-bold  text-slate-900">Dr. Grace Lun </p>
-            <p className="text-xl lg:text-4xl font-bold  text-slate-900">Dr. Christy MacAulay</p>
+            <p className="text-xl lg:text-4xl font-bold  text-slate-50">Dr. Sherine Soliman </p>
+            <p className="text-xl lg:text-4xl font-bold  text-slate-50">Dr. Grace Lun </p>
+            <p className="text-xl lg:text-4xl font-bold  text-slate-50">Dr. Christy MacAulay</p>
           </div>
           <div className="flex flex-col justify-center items-center w-full gap-2 p-2">
-            <p className="xl:w-2/5 text-slate-900 lg:text-2xl">Suite 101, 586 Argus Road, Oakville, ON L6J 3J3</p>
-            <p className=" text-slate-900 text-md lg:text-2xl">Mon - Fri 9:00 am to 5:00 pm</p>
-            <p className=" text-slate-900 text-md lg:text-2xl">Telephones answered Mon - Thurs 9:15 am - 12:00 pm and 1:15 pm - 4:00 pm, Fri 9:15 am - 12:00 pm</p>
+            <p className="xl:w-2/5 text-slate-50 lg:text-2xl">Suite 101, 586 Argus Road, Oakville, ON L6J 3J3</p>
+            <p className=" text-slate-50 text-md lg:text-2xl">Mon - Fri 9:00 am to 5:00 pm</p>
+            <p className=" text-slate-50 text-md lg:text-2xl">Telephones answered Mon - Thurs 9:15 am - 12:00 pm and 1:15 pm - 4:00 pm, Fri 9:15 am - 12:00 pm</p>
           </div>
 
           <Link href="https://ocean.cognisantmd.com/online-booking/cddcbae7-4cba-4ebd-9e93-7b5aceb285e5">

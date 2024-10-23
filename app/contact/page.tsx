@@ -26,23 +26,10 @@ const Contact = () => {
             {/* <h1 className="text-6xl font-semibold">Contact Us</h1> */}
             <div className="flex justify-center md:flex-row flex-col gap-14">
                 <div className="flex flex-col gap-6 md:w-1/3 w-full mt-8 text-center md:text-left text-base lg:text-lg">
-                    {/* <div className="flex justify-start items-center gap-4 w-full">
-                        <MdPhone size={22}/>
-                        <p className="text-sm">905-842-2410</p>
-                    </div>
-
-                    <div className="flex justify-start items-center gap-4 w-full">
-                        <MdPhone size={22}/>
-                        <p className="text-sm">905-842-2410</p>
-                    </div>
-
-                    <p>Mon-Thurs 9:15 am - 12:00 pm and 1:15pm - 4:00 pm</p>
-                    <p>Fri 9:15 am - 12:00 pm</p> */}
-
-                    <p>The phone lines tend to be very busy between 9:15 am and 11:00 am. If the appointment is quite soon we will also contact you by telephone. Please let us know if we can leave test results on voicemail or email, otherwise make an appointment to review with your doctor.
+                    <p>The phone lines tend to be very busy between 9:15 am and 11:00 am. Please let us know if we can leave test results on voicemail or email, otherwise make an appointment to review with your doctor.
                     </p>
 
-                    <p>Appointments at hospitals for diagnostic imaging are nearly always faxed to the office and we will call you with details. If you are awaiting such an appointment and we have to leave a voice mail, we will mention that we need to give you appointment details.
+                    <p>Appointments at hospitals for diagnostic imaging are faxed to the office and we will call you with details or leave a voice mail.
                     </p>
                 </div>
                 <Card className="md:w-[350px] md:mt-8">
