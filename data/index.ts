@@ -94,7 +94,7 @@ export const faqs = [
     {
         id: 1,
         item: 'Is wearing a mask mandatory?',
-        content: 'At the present time, wearing a mask is now optional but we do ask that if you have any type of respiratory symptoms that you do wear a mask.'
+        content: 'Wearing a mask is now optional but we do ask that if you have any type of respiratory symptoms that you do wear a mask.'
     },
     {
         id: 2,
@@ -150,16 +150,6 @@ export const contactInfo = [
 
 export const resources = [
   {
-    id:4,
-    title: 'Halton Region Public Health',
-    link: 'https://www.halton.ca/For-Residents/Public-Health'
-  },
-  {
-    id: 1,
-    title: 'COVID-19 Vaccines',
-    link: 'https://www.halton.ca/For-Residents/Immunizations-Preventable-Disease/Immunization/COVID-19-Vaccines'
-  },
-  {
     id: 2,
     title: 'Glycemic Index Food-Guide',
     link: 'https://guidelines.diabetes.ca/GuideLines/media/Docs/Patient%20Resources/glycemic-index-food-guide.pdf'
@@ -168,5 +158,15 @@ export const resources = [
     id: 3,
     title: 'Calcium Calulator',
     link: 'https://osteoporosis.ca/calcium-calculator/'
+  },
+  {
+    id:4,
+    title: 'Halton Region Public Health',
+    link: 'https://www.halton.ca/For-Residents/Public-Health'
+  },
+  {
+    id: 1,
+    title: 'COVID-19 Vaccines',
+    link: 'https://www.halton.ca/For-Residents/Immunizations-Preventable-Disease/Immunization/COVID-19-Vaccines'
   },
 ]

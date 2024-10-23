@@ -25,7 +25,7 @@
     bottom: 0;
     right: 0;
     opacity: 1;
-    background-image: url('../public/assets/images/background16.png');
+    background-image: url('../public/assets/images/background15.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -47,29 +47,6 @@
 }
 
 
-.holidayHours {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 70vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    scroll-behavior: smooth;
-    background-image: url('../public/assets/images/background17.png');
-}
-
-.nurse {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 67vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    scroll-behavior: smooth;
-    background-image: url('../public/assets/images/background18.png');
-}
 
 .contact {
     display:flex;
