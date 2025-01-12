@@ -7,7 +7,7 @@ import logo from '../../public/assets/images/background14.jpeg';
 
 const AfterHours = () => {
   return (
-    <div className="flex flex-col bg-slate-50">
+    <div className="flex flex-col  bg-slate-50">
        {/* <section className="flex flex-col afterHours">
         <Navbar />
         <div className="relative flex flex-col gap-4 mt-52 items-center justify-center text-center">
@@ -17,10 +17,10 @@ const AfterHours = () => {
 
         <Navbar />
 
-        <section className="flex flex-col xl:flex-row gap-12 px-5 lg:px-20 mt-40 md:mt-64">
-          <div className="flex flex-col text-center xl:text-left gap-6 lg:w-[90%] text-base lg:text-lg">
+        <section className="flex flex-col items-center xl:flex-row xl:items-start gap-12 px-5 xl:px-20 mt-40 md:mt-64">
+          <div className="flex flex-col text-center xl:text-left gap-6 lg:w-[90%] xl:w-[60%] text-base lg:text-lg">
             <h1 className="text-3xl lg:text-6xl font-semibold">After Hours Clinic</h1>
-            <div className="flex gap-4 font-bold text-base md:text-xl lg:text-2xl">
+            <div className="flex flex-col md:flex-row gap-4 font-bold text-base md:text-xl lg:text-xl justify-center text-center xl:justify-start">
               <p>FHO: 905-815-9177</p>
               <p>Telehealth: 1-866-797-0000</p>
             </div>
@@ -37,10 +37,11 @@ const AfterHours = () => {
           </div>
 
           <Image 
-            width={600}
-            height={600}
+            width={1000}
+            height={1000}
             src="/assets/images/background14.jpeg"
             alt="after hours"
+            className="lg:max-h-[600px] xl:max-h-[1200px]"
           />
 
           {/* <img src={logo} /> */}

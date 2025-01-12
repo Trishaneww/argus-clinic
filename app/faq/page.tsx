@@ -1,9 +1,31 @@
+"use client"
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import { faqs } from '@/data'
 import React from 'react'
+import { useState } from 'react'
 
 const faq = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState<string | null>(null);
+
+  const images: string[] = [
+    "/assets/images/blockfee1.png", // Replace with your image URLs
+    "/assets/images/blockfee2.png",
+    "/assets/images/blockfee3.png",
+  ];
+
+  const openModal = (image: string) => {
+    setCurrentImage(image);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setCurrentImage(null);
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="flex flex-col items-center  bg-slate-50">
         <Navbar />
@@ -13,15 +35,46 @@ const faq = () => {
         </div>
 
         <section className="flex flex-col items-start gap-16 mt-24 lg:mt-32 px-6 lg:px-20">
-            {faqs.slice(0,2).map((faq) => (
-                <div className="flex flex-col items-start lg:w-[50%] gap-6">
+            {faqs.map((faq) => (
+                <div className="flex flex-col items-start lg:w-[50%] gap-6" key={faq.id}>
                     <p className="text-2xl lg:text-5xl text-gray-700 font-thin">{faq.item}</p>
                     <p className="lg:text-lg text-gray-500">{faq.content}</p>
                 </div>
             ))}
-             <div className="flex flex-col items-start lg:w-[50%] gap-6">
-                    <p className="text-2xl lg:text-5xl text-gray-700 font-thin">How do I book an appointment?</p>
-                    <p className="lg:text-lg text-gray-500">To book an appointment online, simply click <a href="https://ocean.cognisantmd.com/online-booking/cddcbae7-4cba-4ebd-9e93-7b5aceb285e5" className="text-blue-400">here</a>. You'll be directed to our secure online booking form.</p>
+
+
+            <div className="flex flex-col items-start lg:w-[50%] gap-6">
+                <p className="text-2xl lg:text-5xl text-gray-700 font-thin">Uninsured services & block fees</p>
+                <div className="flex gap-4 justify-center items-center">
+                {images.map((image, index) => (
+                    <img
+                    key={index}
+                    src={image}
+                    alt={`Gallery Image ${index + 1}`}
+                    className="w-32 h-32 object-cover cursor-pointer rounded-lg shadow-lg hover:scale-105 transition-transform duration-200"
+                    onClick={() => openModal(image)}
+                    />
+                ))}
+
+                {isModalOpen && (
+                    <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+                    onClick={closeModal}
+                    >
+                    <img
+                        src={currentImage || ""}
+                        alt="Full Screen"
+                        className="max-w-full max-h-full rounded-lg"
+                    />
+                    <button
+                        className="absolute top-4 right-4 text-white text-xl"
+                        onClick={closeModal}
+                    >
+                        ✕
+                    </button>
+                    </div>
+                )}
+            </div>
             </div>
         </section>
 
