@@ -27,8 +27,12 @@ const Hero = () => {
           <Link href="https://ocean.cognisantmd.com/online-booking/cddcbae7-4cba-4ebd-9e93-7b5aceb285e5">
             <Button className="w-[280px] h-[60px] mt-12 lg:mt-6 text-lg">Online appointment booking</Button>
           </Link>
-
         </div>
+      </section>
+
+      <section className="flex flex-col w-full md:w-4/5 lg:w-3/5 self-center text-center gap-4 mt-14  p-4 text-base lg:text-lg ">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">Congratulations to Dr Slinger on retiring after 35 years of dedication to her patients!</h1>
+        <p>Please note that Dr MacAulay will take over Dr Slinger’s patients starting on Jan 6th, 2025. For Dr Slinger’s patients: Please let us know ASAP if you have NOT received her retirement announcement letter and the roster form for Dr Macaulay.</p>
       </section>
 
       <section className="flex flex-col md:w-4/5 lg:w-3/5 self-center text-center gap-4 my-14  p-4 text-base lg:text-lg">
@@ -39,7 +43,7 @@ const Hero = () => {
 
         <p>Wearing a mask is now optional but we do ask that if you have any type of respiratory symptoms that you do wear a mask.</p>
 
-        <p>If you have COVID symptoms we request that you do a test before coming to the office. In case of a positive test let us know and your appointment will be virtual or by telephone instead of in office. COVID test kits are available in the office and at locations listed on the<a href="https://www.halton.ca/For-Residents/Public-Health" target="_blank" className="text-sky-600"> Halton Region Public Health website.</a></p>
+        <p>If you have COVID symptoms we request that you do a test before coming to the office. <span className="font-bold">In case of a positive test</span> let us know and your appointment will be virtual or by telephone instead of in office. COVID test kits are available in the office for high risk patients or to buy at a pharmacy.</p>
 
         <p>Please ensure you have a valid health card and let us know if it has recently been renewed. This is also a good time to provide any updates to your address, telephone number or email address. On arrival at the office we ask COVID screening questions and request you sanitize your hands. Please wear a mask if you have any type of respiratory symptoms.</p>
 

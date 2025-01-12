@@ -1,15 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
-import { PatientForm } from "@/components/forms/PatientForm";
-import { navItems } from "@/data";
 import '../styles/global.scss';
 import Navbar from "@/components/Navbar";
-import { Button } from "@/components/ui/button";
 import Hero from "@/components/Hero";
-import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Location from "@/components/Location";
-import Services from "@/components/Services";
 
 const Home = () => {
   // const isAdmin = searchParams?.admin === "true";
