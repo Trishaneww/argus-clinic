@@ -25,16 +25,16 @@ const HolidayHours = () => {
 
          <section className="flex flex-col  justify-start items-start gap-6 px-6 md:px-20 mt-20">
             <div className="flex flex-col lg:flex-row justify-center gap-6 xl:gap-20 items-start text-center md:text-left">
-              <div className="w-full lg:w-3/4">
+              <div className="w-full lg:w-[90%]">
                 <h1 className="text-xl md:text-3xl font-semibold mb-6">Argus Doctors Clinic Holiday Hours 2025</h1>
-                <div className="text-sm md:text-base flex flex-col w-full lg:w-[650px] xl:w-[720px] rounded-2xl bg-zinc-50">
+                <div className="text-sm md:text-base flex flex-col w-full lg:w-[650px] xl:w-[680px] rounded-2xl bg-zinc-50 ">
                   <div className="flex items-center h-[60px] p-4">
                     <p className="w-1/3 lg:w-[200px] xl:w-[300px]">Holiday</p>
                     <p className="w-1/3 lg:w-[300px] xl:w-[300px]">Date</p>
                     <p className="w-1/3 lg:w-[180px] xl:w-[300px]">Hours</p>
                   </div>
                   {holidayHours.map((holiday) => (
-                    <div className={`text-sm md:text-base flex items-center h-[60px] p-4 ${holiday.id % 2 === 0 && 'bg-zinc-100'}`}>
+                    <div className={`text-sm md:text-base flex items-center h-[60px] p-4 ${holiday.id % 2 === 0 && 'bg-zinc-100'}`} key={holiday.id}>
                       <p className="w-1/3 lg:w-[200px] xl:w-[300px]">{holiday.holiday}</p>
                       <p className="w-1/3 lg:w-[300px] xl:w-[300px]">{holiday.date}</p>
                       <p className="w-1/3 lg:w-[180px] xl:w-[300px]">{holiday.hours}</p>
