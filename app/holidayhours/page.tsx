@@ -11,7 +11,7 @@ const HolidayHours = () => {
         <Navbar />
         <section className="flex bg-gray-100 px-10 pb-12 lg:mt-20">
           <div className="relative flex flex-col gap-4 mt-52 xl:ml-40 items-start justify-center h-full xl:w-2/4">
-            <h1 className="text-4xl md:text-6xl font-semibold">Holiday Hours 2024</h1>
+            <h1 className="text-4xl md:text-6xl font-semibold">Holiday Hours 2025</h1>
             <p className="xl:w-3/4">Please note our adjusted hours during the holiday season to ensure you receive the care you need.</p>
           </div>
 
@@ -26,7 +26,7 @@ const HolidayHours = () => {
          <section className="flex flex-col  justify-start items-start gap-6 px-6 md:px-20 mt-20">
             <div className="flex flex-col lg:flex-row justify-center gap-6 xl:gap-20 items-start text-center md:text-left">
               <div className="w-full lg:w-3/4">
-                <h1 className="text-xl md:text-3xl font-semibold mb-6">Argus Doctors Clinic Holiday Hours</h1>
+                <h1 className="text-xl md:text-3xl font-semibold mb-6">Argus Doctors Clinic Holiday Hours 2025</h1>
                 <div className="text-sm md:text-base flex flex-col w-full lg:w-[650px] xl:w-[720px] rounded-2xl bg-zinc-50">
                   <div className="flex items-center h-[60px] p-4">
                     <p className="w-1/3 lg:w-[200px] xl:w-[300px]">Holiday</p>
