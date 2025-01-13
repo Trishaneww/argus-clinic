@@ -29,65 +29,58 @@ export const doctors = [
 export const holidayHours = [
   {
     id:1,
-    date: 'Monday, January 1',
-    holiday: 'New Years Day',
+    date: 'Wednesday, January 1',
+    holiday: "New Year's Day",
     hours: 'Closed all day'
   },
   {
     id:2,
-    date: 'Monday, February 19',
+    date: 'Monday, February 17',
     holiday: 'Family Day',
     hours: 'Closed all day'
   },
   {
     id:3,
-    date: 'Friday, March 29',
+    date: 'Friday, April 18',
     holiday: 'Good Friday',
     hours: 'Closed all day'
   },
   {
     id:4,
-    date: 'Monday, May 20',
+    date: 'Monday, May 19',
     holiday: 'Victoria Day',
     hours: 'Closed all day'
   },
   {
     id:5,
-    date: 'Monday, July 1',
+    date: 'Tuesday, July 1',
     holiday: 'Canada Day',
     hours: 'Closed all day'
   },
   {
     id:6,
-    date: 'Monday, August 5',
-    holiday: 'Civic Holiday',
-    hours: 'Closed all day'
-  },
-  {
-    id:7,
-    date: 'Monday, September 2',
+    date: 'Monday, September 1',
     holiday: 'Labour Day',
     hours: 'Closed all day'
   },
   {
-    id:8,
-    date: 'Monday, October 14',
+    id:7,
+    date: 'Monday, October 13',
     holiday: 'Thanksgiving',
     hours: 'Closed all day'
   },
   {
-    id:9,
-    date: 'Wednesday, December 25',
+    id:8,
+    date: 'Thursday, December 25',
     holiday: 'Christmas Day',
     hours: 'Closed all day'
   },
   {
-    id:10,
-    date: 'Thursday, December 26',
+    id:9,
+    date: 'Friday, December 26',
     holiday: 'Boxing Day',
     hours: 'Closed all day'
   },
-
 ]
 
 export const faqs = [
