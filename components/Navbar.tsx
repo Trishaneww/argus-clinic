@@ -73,6 +73,12 @@ const Navbar = () => {
       <a href="/holidayhours">Holiday Hours</a>
       <a href="/contact">Contact</a>
       <a href="/faq">FAQ</a>
+      <a href="/patientresources">Patient Resources</a>
+      <a href="/usefullinks">Useful Links</a>
+      {/* <div className="flex flex-col gap-4 items-start justify-start w-[500px]">
+            <NavDropDown />
+            <NavDropDown2 />
+      </div> */}
       <Link href="https://ocean.cognisantmd.com/online-booking/cddcbae7-4cba-4ebd-9e93-7b5aceb285e5">
           <Button className="w-[220px] h-[60px] lg:mt-6">Online appointment booking</Button>
       </Link>
