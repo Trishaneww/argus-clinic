@@ -1,4 +1,4 @@
-import { contactInfo, footerCompany } from '@/data'
+import { footerCompany } from '@/data'
 import Link from 'next/link'
 import React from 'react'
 
@@ -7,14 +7,14 @@ const Footer = () => {
     <div className="flex flex-col xl:flex-row justify-between  p-10 xl:items-center w-full xl:h-[24rem] bg-slate-900  mt-20">
         <section className="xl:w-1/4 flex flex-col gap-4 justify-start">
             <h1 className="text-slate-50 font-bold text-3xl xl:text-5xl xl:ml-20">Argus Doctors</h1>
-            <p className="text-slate-50 xl:ml-20 mb-9 xl:mb-0">@2024 Argus Doctors. All rights reserved</p>
+            <p className="text-slate-50 xl:ml-20 mb-9 xl:mb-0">@2025 Argus Doctors. All rights reserved</p>
         </section>
 
         <section className="flex gap-12 xl:justify-center items-start xl:w-3/4 flex-wrap">
             <div className="flex flex-col gap-2">
                 <p className="text-slate-50 font-semibold">Clinic</p>
-                {footerCompany.map((link) => (
-                    <Link href={link.link} className="text-slate-300">
+                {footerCompany.map((link, idx) => (
+                    <Link href={link.link} className="text-slate-300" key={idx}>
                         <p>{link.name}</p>
                     </Link>
                 ))}
