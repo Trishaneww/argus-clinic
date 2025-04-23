@@ -22,7 +22,7 @@ const Navbar = () => {
 
   
   return (
-    <div className="flex w-full justify-between lg:justify-center items-center h-[80px]  px-6 md:p-6 backdrop-blur-md navbar self-center scroll-smooth z-10 fixed mb-20 bg-slate-50">
+    <div className="flex w-full justify-between lg:justify-center items-center h-[80px]  px-6 md:p-6 backdrop-blur-md navbar self-center scroll-smooth z-10 fixed mb-20 bg-slate-50 top-14 md:top-9">
         
         <div className="flex lg:gap-12 justify-start lg:justify-center w-full px-2">
           <Link href='/' className={cn(

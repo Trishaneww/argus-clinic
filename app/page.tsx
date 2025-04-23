@@ -3,12 +3,14 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import Location from "@/components/Location";
+import Navbar2 from '@/components/Navbar2';
 
 const Home = () => {
   // const isAdmin = searchParams?.admin === "true";
 
   return (
     <div className="flex flex-col bg-slate-50 scroll-smooth">
+      <Navbar2 />
       <Navbar />
       <Hero />
       {/* <Services /> */}
