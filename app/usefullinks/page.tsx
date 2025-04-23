@@ -4,6 +4,7 @@ import { faqs, resources } from '@/data'
 import Link from 'next/link'
 import React from 'react'
 
+
 const usefullinks = () => {
   return (
     <div className="flex flex-col items-center  bg-slate-50">
