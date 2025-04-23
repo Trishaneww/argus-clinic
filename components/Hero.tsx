@@ -11,7 +11,7 @@ const Hero = () => {
     <div className="flex flex-col">
       <section className="flex flex-col hero">
 
-        <div className="absolute w-full flex flex-col gap-2 mt-40 lg:mt-52 items-center justify-center text-center">
+        <div className="absolute w-full flex flex-col gap-2 mt-52 lg:mt-60 items-center justify-center text-center">
           <h1 className=" text-5xl lg:text-8xl font-bold mb-4 lg:mb-12 text-slate-50">Argus Doctors</h1>
           <div className="flex justify-center gap-2 lg:gap-8 w-full flex-wrap mb-4 lg:mb-12">
             <p className="text-xl lg:text-4xl font-bold  text-slate-50">Dr. Sherine Soliman </p>
