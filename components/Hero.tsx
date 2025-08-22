@@ -24,7 +24,7 @@ const Hero = () => {
             <p className=" text-slate-50 text-md lg:text-2xl">Telephones answered Mon - Thurs 9:15 am - 12:00 pm and 1:15 pm - 4:00 pm, Fri 9:15 am - 12:00 pm</p>
           </div>
 
-          <Link href="https://ocean.cognisantmd.com/online-booking/cddcbae7-4cba-4ebd-9e93-7b5aceb285e5">
+          <Link href="https://ocean.cognisantmd.com/online-booking/cddcbae7-4cba-4ebd-9e93-7b5aceb285e5" target="_blank">
             <Button className="w-[280px] h-[60px] mt-12 lg:mt-6 text-lg">Online appointment booking</Button>
           </Link>
         </div>

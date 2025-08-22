@@ -1,23 +1,14 @@
 import React from 'react'
 import '../../styles/global.scss';
-import Navbar from "@/components/Navbar";
 import Footer from '@/components/Footer';
 import Image from 'next/image';
-import logo from '../../public/assets/images/background14.jpeg';
+import Navbar3 from '@/components/Navbar3';
 
 const AfterHours = () => {
   return (
     <div className="flex flex-col  bg-slate-50">
-       {/* <section className="flex flex-col afterHours">
-        <Navbar />
-        <div className="relative flex flex-col gap-4 mt-52 items-center justify-center text-center">
-          <h1 className="text-6xl text-black">After Hours</h1>
-        </div>
-      </section> */}
-
-        <Navbar />
-
-        <section className="flex flex-col items-center xl:flex-row xl:items-start gap-12 px-5 xl:px-20 mt-40 md:mt-64">
+        <Navbar3 />
+        <section className="flex flex-col items-center xl:flex-row xl:items-start gap-12 px-5 xl:px-20 mt-32 md:mt-52">
           <div className="flex flex-col text-center xl:text-left gap-6 lg:w-[90%] xl:w-[60%] text-base lg:text-lg">
             <h1 className="text-3xl lg:text-6xl font-semibold">After Hours Clinic</h1>
             <div className="flex flex-col md:flex-row gap-4 font-bold text-base md:text-xl lg:text-xl justify-center text-center xl:justify-start">

@@ -1,6 +1,7 @@
 "use client"
+
 import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
+import Navbar3 from '@/components/Navbar3'
 import { faqs } from '@/data'
 import React from 'react'
 import { useState } from 'react'
@@ -28,8 +29,8 @@ const faq = () => {
 
   return (
     <div className="flex flex-col items-center  bg-slate-50">
-        <Navbar />
-        <div className="mt-44 lg:mt-60 px-6 lg:px-20 flex flex-col items-start gap-4 w-full">
+        <Navbar3 />
+        <div className="mt-32 lg:mt-52 px-6 lg:px-20 flex flex-col items-start gap-4 w-full">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-semibold">Frequently asked questions</h1>
             <p className="text-base lg:text-lg">Find quick answers to common questions about appointments and patient care.</p>
         </div>
