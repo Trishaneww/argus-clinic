@@ -1,16 +1,16 @@
 import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
 import { holidayHours } from '@/data'
 import Image from 'next/image'
 import React from 'react'
 import clock from '../../public/assets/images/clock.png';
+import Navbar3 from '@/components/Navbar3'
 
 const HolidayHours = () => {
   return (
     <div className="flex flex-col">
-        <Navbar />
+        <Navbar3 />
         <section className="flex bg-gray-100 px-10 pb-12 lg:mt-20">
-          <div className="relative flex flex-col gap-4 mt-52 xl:ml-40 items-start justify-center h-full xl:w-2/4">
+          <div className="relative flex flex-col gap-4 mt-32 xl:ml-40 items-start justify-center h-full xl:w-2/4">
             <h1 className="text-4xl md:text-6xl font-semibold">Holiday Hours 2025</h1>
             <p className="xl:w-3/4">Please note our adjusted hours during the holiday season to ensure you receive the care you need.</p>
           </div>

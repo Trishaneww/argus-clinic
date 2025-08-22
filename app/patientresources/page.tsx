@@ -1,14 +1,13 @@
 import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
-import { faqs, resources } from '@/data'
-import Link from 'next/link'
+import Navbar3 from '@/components/Navbar3'
+import { resources } from '@/data'
 import React from 'react'
 
 const patientresources = () => {
   return (
     <div className="flex flex-col items-center  bg-slate-50">
-        <Navbar />
-        <div className="mt-36 lg:mt-60 px-6 lg:px-20 flex flex-col items-start gap-4 w-full">
+        <Navbar3 />
+        <div className="mt-32 lg:mt-52 px-6 lg:px-20 flex flex-col items-start gap-4 w-full">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-semibold">Patient Resources</h1>
             <p className="text-base lg:text-lg">Find helpful guides, forms, and health information to make your visit easy and stress-free—all in one place.</p>
         </div>
